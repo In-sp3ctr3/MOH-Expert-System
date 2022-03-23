@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>680</width>
-    <height>400</height>
+    <width>752</width>
+    <height>455</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -48,8 +48,8 @@
       <widget class="QLabel" name="label_description">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>300</y>
+         <x>40</x>
+         <y>340</y>
          <width>661</width>
          <height>21</height>
         </rect>
@@ -73,8 +73,8 @@
       <widget class="QProgressBar" name="progressBar">
        <property name="geometry">
         <rect>
-         <x>50</x>
-         <y>270</y>
+         <x>90</x>
+         <y>300</y>
          <width>561</width>
          <height>23</height>
         </rect>
@@ -103,8 +103,8 @@ QProgressBar::chunk{
       <widget class="QLabel" name="label_credits">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>350</y>
+         <x>90</x>
+         <y>400</y>
          <width>621</width>
          <height>21</height>
         </rect>
@@ -128,8 +128,8 @@ QProgressBar::chunk{
       <widget class="QLabel" name="label">
        <property name="geometry">
         <rect>
-         <x>140</x>
-         <y>110</y>
+         <x>190</x>
+         <y>130</y>
          <width>371</width>
          <height>111</height>
         </rect>
@@ -138,7 +138,7 @@ QProgressBar::chunk{
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="../resources.qrc">:/images/images/images/Logo-Full.png</pixmap>
+        <pixmap resource="resources.qrc">:/images/images/images/Logo-Full.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -147,8 +147,8 @@ QProgressBar::chunk{
       <widget class="QLabel" name="label_2">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>10</y>
+         <x>50</x>
+         <y>30</y>
          <width>111</width>
          <height>61</height>
         </rect>
@@ -157,7 +157,7 @@ QProgressBar::chunk{
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="../resources.qrc">:/images/images/images/mohw.png</pixmap>
+        <pixmap resource="resources.qrc">:/images/images/images/mohw.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -166,8 +166,8 @@ QProgressBar::chunk{
       <widget class="QLabel" name="label_3">
        <property name="geometry">
         <rect>
-         <x>510</x>
-         <y>-30</y>
+         <x>580</x>
+         <y>-10</y>
          <width>131</width>
          <height>131</height>
         </rect>
@@ -176,7 +176,7 @@ QProgressBar::chunk{
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="../resources.qrc">:/images/images/images/stopcorona.png</pixmap>
+        <pixmap resource="resources.qrc">:/images/images/images/stopcorona.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -188,7 +188,8 @@ QProgressBar::chunk{
   </widget>
  </widget>
  <resources>
-  <include location="../resources.qrc"/>
+  <include location="splash_resource.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections/>
 </ui>

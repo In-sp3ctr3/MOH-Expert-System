@@ -60,8 +60,8 @@ class MainWindow(QMainWindow):
 
         # APP NAME
         # ///////////////////////////////////////////////////////////////
-        title = "PyDracula - Modern GUI"
-        description = "PyDracula APP - Theme with colors based on Dracula for Python."
+        title = "COVIDEX"
+        description = "COVIDEX"
         # APPLY TEXTS
         self.setWindowTitle(title)
         widgets.titleRightInfo.setText(description)
@@ -204,7 +204,7 @@ class SplashScreen(QMainWindow):
         # CHANGE DESCRIPTION
 
         # Initial Text
-        self.ui.label_description.setText("<strong>WELCOME</strong> TO MY APPLICATION")
+        self.ui.label_description.setText("<strong>SETTING</strong> UP THINGS")
 
         # Change Texts
         QtCore.QTimer.singleShot(1500, lambda: self.ui.label_description.setText("<strong>LOADING</strong> DATABASE"))
@@ -225,7 +225,7 @@ class SplashScreen(QMainWindow):
         # SET VALUE TO PROGRESS BAR
         self.ui.progressBar.setValue(counter)
 
-        # CLOSE SPLASH SCREE AND OPEN APP
+        # CLOSE SPLASH SCREEN AND OPEN APP
         if counter > 100:
             # STOP TIMER
             self.timer.stop()
