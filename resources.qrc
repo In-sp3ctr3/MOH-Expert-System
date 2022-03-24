@@ -1,6 +1,12 @@
 <RCC>
   <qresource prefix="images">
+    <file>icons8-age-50.png</file>
+    <file>icons8-height-50.png</file>
+    <file>icons8-person-64.png</file>
+    <file>icons8-weight-64.png</file>
+    <file>resources.qrc</file>
     <file>images/images/Logo.png</file>
+    <file>button.png</file>
     <file>images/images/Logo-Full.png</file>
     <file>images/images/mohw.png</file>
     <file>images/images/stopcorona.png</file>
