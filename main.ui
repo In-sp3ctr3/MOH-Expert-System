@@ -293,7 +293,7 @@ QHeaderView::section:vertical
 LineEdit */
 QLineEdit {
 	background-color: rgb(0, 179, 204);
-
+   border: 2px solid rgb(64, 71, 88);
 	padding-left: 10px;
 	selection-color: rgb(255, 255, 255);
 	selection-background-color: rgb(255, 121, 198);
@@ -1886,7 +1886,7 @@ p, li { white-space: pre-wrap; }
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>2</number>
+                      <number>0</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="minimumSize">
@@ -1969,6 +1969,102 @@ border: 2px solid rgba(0, 0, 0, 10);</string>
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
+                       <widget class="QLabel" name="label_34">
+                        <property name="geometry">
+                         <rect>
+                          <x>10</x>
+                          <y>10</y>
+                          <width>51</width>
+                          <height>51</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border: none;</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/images/icons8-user-64.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_35">
+                        <property name="geometry">
+                         <rect>
+                          <x>75</x>
+                          <y>7</y>
+                          <width>131</width>
+                          <height>41</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border:none;
+font: 700 11pt &quot;Droid Sans Fallback&quot;;
+color: rgb(26, 95, 180);</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;John Doe&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_36">
+                        <property name="geometry">
+                         <rect>
+                          <x>230</x>
+                          <y>17</y>
+                          <width>21</width>
+                          <height>21</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border: none;</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/images/icons8-notification-64.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_37">
+                        <property name="geometry">
+                         <rect>
+                          <x>77</x>
+                          <y>40</y>
+                          <width>70</width>
+                          <height>18</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border: none;
+color: rgb(189, 189, 189);</string>
+                        </property>
+                        <property name="text">
+                         <string>User ID</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_38">
+                        <property name="geometry">
+                         <rect>
+                          <x>78</x>
+                          <y>68</y>
+                          <width>111</width>
+                          <height>18</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border:none;
+</string>
+                        </property>
+                        <property name="text">
+                         <string>Health Expert</string>
+                        </property>
+                       </widget>
                       </widget>
                       <widget class="QFrame" name="frame_4">
                        <property name="geometry">
@@ -2053,6 +2149,212 @@ border: 2px solid rgba(0, 0, 0, 10);</string>
                        <property name="frameShadow">
                         <enum>QFrame::Raised</enum>
                        </property>
+                       <widget class="QFrame" name="frame_11">
+                        <property name="geometry">
+                         <rect>
+                          <x>36</x>
+                          <y>18</y>
+                          <width>180</width>
+                          <height>180</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border-style: none;
+border-radius: 0px;</string>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::NoFrame</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <widget class="QFrame" name="frame_13">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>180</width>
+                           <height>180</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">border-style:none;
+border-radius:90px;
+background-color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::NoFrame</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <widget class="QFrame" name="frame_14">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>0</y>
+                            <width>180</width>
+                            <height>180</height>
+                           </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.749 rgba(129, 61, 156, 0), stop:0.75 rgba(53, 132, 228, 255));</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::NoFrame</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <widget class="QFrame" name="frame_15">
+                           <property name="geometry">
+                            <rect>
+                             <x>20</x>
+                             <y>20</y>
+                             <width>140</width>
+                             <height>140</height>
+                            </rect>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:70px;</string>
+                           </property>
+                           <property name="frameShape">
+                            <enum>QFrame::NoFrame</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <widget class="QLabel" name="label_30">
+                            <property name="geometry">
+                             <rect>
+                              <x>23</x>
+                              <y>41</y>
+                              <width>101</width>
+                              <height>18</height>
+                             </rect>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">background-color: rgba(191, 64, 64, 0);</string>
+                            </property>
+                            <property name="text">
+                             <string>Positive Cases</string>
+                            </property>
+                           </widget>
+                           <widget class="QLabel" name="label_31">
+                            <property name="geometry">
+                             <rect>
+                              <x>55</x>
+                              <y>64</y>
+                              <width>66</width>
+                              <height>18</height>
+                             </rect>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">
+font: 700 11pt &quot;Bitstream Vera Sans&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>50%</string>
+                            </property>
+                           </widget>
+                          </widget>
+                         </widget>
+                        </widget>
+                       </widget>
+                       <widget class="QFrame" name="frame_16">
+                        <property name="geometry">
+                         <rect>
+                          <x>38</x>
+                          <y>210</y>
+                          <width>180</width>
+                          <height>180</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border-style:none;
+border-radius:90px;
+background-color: rgb(255, 255, 255);</string>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::NoFrame</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <widget class="QFrame" name="frame_17">
+                         <property name="geometry">
+                          <rect>
+                           <x>0</x>
+                           <y>0</y>
+                           <width>180</width>
+                           <height>180</height>
+                          </rect>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.799 rgba(129, 61, 156, 0), stop:0.800 rgb(129, 61, 156));</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::NoFrame</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <widget class="QFrame" name="frame_18">
+                          <property name="geometry">
+                           <rect>
+                            <x>20</x>
+                            <y>20</y>
+                            <width>140</width>
+                            <height>140</height>
+                           </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:70px;</string>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::NoFrame</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <widget class="QLabel" name="label_32">
+                           <property name="geometry">
+                            <rect>
+                             <x>17</x>
+                             <y>41</y>
+                             <width>111</width>
+                             <height>18</height>
+                            </rect>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">background-color: rgba(191, 64, 64, 0);</string>
+                           </property>
+                           <property name="text">
+                            <string>Omicron Variant</string>
+                           </property>
+                          </widget>
+                          <widget class="QLabel" name="label_33">
+                           <property name="geometry">
+                            <rect>
+                             <x>55</x>
+                             <y>64</y>
+                             <width>66</width>
+                             <height>18</height>
+                            </rect>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">
+font: 700 11pt &quot;Bitstream Vera Sans&quot;;</string>
+                           </property>
+                           <property name="text">
+                            <string>20%</string>
+                           </property>
+                          </widget>
+                         </widget>
+                        </widget>
+                       </widget>
                       </widget>
                      </widget>
                      <widget class="QWidget" name="widgets">
@@ -2077,6 +2379,12 @@ border: 2px solid rgba(0, 0, 0, 10);</string>
                        </property>
                        <item>
                         <widget class="QFrame" name="frame_8">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
                          <property name="styleSheet">
                           <string notr="true">background-color: rgb(255, 255, 255);
 border-radius:15px;</string>
@@ -2090,10 +2398,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label">
                           <property name="geometry">
                            <rect>
-                            <x>80</x>
-                            <y>80</y>
-                            <width>471</width>
-                            <height>81</height>
+                            <x>70</x>
+                            <y>98</y>
+                            <width>511</width>
+                            <height>91</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2109,10 +2417,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label_3">
                           <property name="geometry">
                            <rect>
-                            <x>80</x>
-                            <y>160</y>
-                            <width>471</width>
-                            <height>81</height>
+                            <x>70</x>
+                            <y>175</y>
+                            <width>511</width>
+                            <height>101</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2128,10 +2436,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label_4">
                           <property name="geometry">
                            <rect>
-                            <x>80</x>
-                            <y>310</y>
-                            <width>471</width>
-                            <height>81</height>
+                            <x>70</x>
+                            <y>295</y>
+                            <width>511</width>
+                            <height>101</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2147,10 +2455,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label_5">
                           <property name="geometry">
                            <rect>
-                            <x>80</x>
-                            <y>390</y>
-                            <width>471</width>
-                            <height>81</height>
+                            <x>70</x>
+                            <y>380</y>
+                            <width>511</width>
+                            <height>101</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2166,10 +2474,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label_6">
                           <property name="geometry">
                            <rect>
-                            <x>650</x>
-                            <y>70</y>
-                            <width>471</width>
-                            <height>81</height>
+                            <x>610</x>
+                            <y>90</y>
+                            <width>511</width>
+                            <height>101</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2185,10 +2493,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label_7">
                           <property name="geometry">
                            <rect>
-                            <x>100</x>
-                            <y>97</y>
-                            <width>41</width>
-                            <height>41</height>
+                            <x>90</x>
+                            <y>112</y>
+                            <width>51</width>
+                            <height>51</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2204,10 +2512,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label_8">
                           <property name="geometry">
                            <rect>
-                            <x>100</x>
-                            <y>177</y>
-                            <width>41</width>
-                            <height>41</height>
+                            <x>90</x>
+                            <y>198</y>
+                            <width>51</width>
+                            <height>51</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2223,10 +2531,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label_9">
                           <property name="geometry">
                            <rect>
-                            <x>670</x>
-                            <y>90</y>
-                            <width>41</width>
-                            <height>41</height>
+                            <x>638</x>
+                            <y>109</y>
+                            <width>51</width>
+                            <height>51</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2242,10 +2550,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label_11">
                           <property name="geometry">
                            <rect>
-                            <x>105</x>
-                            <y>326</y>
-                            <width>41</width>
-                            <height>41</height>
+                            <x>94</x>
+                            <y>317</y>
+                            <width>51</width>
+                            <height>51</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2261,11 +2569,14 @@ border-radius:15px;</string>
                          <widget class="QLineEdit" name="lineEdit">
                           <property name="geometry">
                            <rect>
-                            <x>143</x>
-                            <y>106</y>
-                            <width>361</width>
-                            <height>26</height>
+                            <x>150</x>
+                            <y>126</y>
+                            <width>381</width>
+                            <height>31</height>
                            </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border-style: none;</string>
                           </property>
                           <property name="placeholderText">
                            <string>Name</string>
@@ -2274,11 +2585,14 @@ border-radius:15px;</string>
                          <widget class="QLineEdit" name="lineEdit_2">
                           <property name="geometry">
                            <rect>
-                            <x>146</x>
-                            <y>186</y>
-                            <width>361</width>
-                            <height>26</height>
+                            <x>150</x>
+                            <y>205</y>
+                            <width>391</width>
+                            <height>31</height>
                            </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border-style: none;</string>
                           </property>
                           <property name="placeholderText">
                            <string>Age</string>
@@ -2287,11 +2601,14 @@ border-radius:15px;</string>
                          <widget class="QLineEdit" name="lineEdit_3">
                           <property name="geometry">
                            <rect>
-                            <x>148</x>
-                            <y>335</y>
-                            <width>361</width>
-                            <height>26</height>
+                            <x>150</x>
+                            <y>328</y>
+                            <width>391</width>
+                            <height>31</height>
                            </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border-style: none;</string>
                           </property>
                           <property name="placeholderText">
                            <string>Height (Feet)</string>
@@ -2300,11 +2617,14 @@ border-radius:15px;</string>
                          <widget class="QLineEdit" name="lineEdit_4">
                           <property name="geometry">
                            <rect>
-                            <x>148</x>
-                            <y>415</y>
-                            <width>361</width>
-                            <height>26</height>
+                            <x>150</x>
+                            <y>410</y>
+                            <width>391</width>
+                            <height>31</height>
                            </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border-style: none;</string>
                           </property>
                           <property name="placeholderText">
                            <string>Height (Inches)</string>
@@ -2313,11 +2633,14 @@ border-radius:15px;</string>
                          <widget class="QLineEdit" name="lineEdit_5">
                           <property name="geometry">
                            <rect>
-                            <x>715</x>
-                            <y>95</y>
-                            <width>361</width>
-                            <height>26</height>
+                            <x>700</x>
+                            <y>118</y>
+                            <width>381</width>
+                            <height>41</height>
                            </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border-style: none;</string>
                           </property>
                           <property name="placeholderText">
                            <string>Weight</string>
@@ -2326,10 +2649,10 @@ border-radius:15px;</string>
                          <widget class="QLabel" name="label_12">
                           <property name="geometry">
                            <rect>
-                            <x>106</x>
-                            <y>409</y>
-                            <width>41</width>
-                            <height>41</height>
+                            <x>94</x>
+                            <y>400</y>
+                            <width>51</width>
+                            <height>51</height>
                            </rect>
                           </property>
                           <property name="text">
@@ -2342,26 +2665,799 @@ border-radius:15px;</string>
                            <bool>true</bool>
                           </property>
                          </widget>
+                         <widget class="QRadioButton" name="radioButton">
+                          <property name="geometry">
+                           <rect>
+                            <x>90</x>
+                            <y>270</y>
+                            <width>109</width>
+                            <height>24</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string>Male</string>
+                          </property>
+                         </widget>
+                         <widget class="QRadioButton" name="radioButton_2">
+                          <property name="geometry">
+                           <rect>
+                            <x>230</x>
+                            <y>270</y>
+                            <width>109</width>
+                            <height>24</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string>Female</string>
+                          </property>
+                         </widget>
+                         <widget class="QCommandLinkButton" name="commandLinkButton">
+                          <property name="geometry">
+                           <rect>
+                            <x>660</x>
+                            <y>500</y>
+                            <width>111</width>
+                            <height>41</height>
+                           </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(255, 255, 255);
+font: 700 11pt &quot;Cantarell&quot;;
+border-color: rgb(46, 194, 126);
+background-color: rgb(46, 194, 126);
+</string>
+                          </property>
+                          <property name="text">
+                           <string>Continue</string>
+                          </property>
+                          <property name="checkable">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                         <widget class="QCheckBox" name="checkBox">
+                          <property name="geometry">
+                           <rect>
+                            <x>640</x>
+                            <y>190</y>
+                            <width>101</width>
+                            <height>24</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string>Symptom1</string>
+                          </property>
+                         </widget>
+                         <widget class="QComboBox" name="comboBox">
+                          <property name="geometry">
+                           <rect>
+                            <x>640</x>
+                            <y>240</y>
+                            <width>451</width>
+                            <height>41</height>
+                           </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(94, 92, 100);
+border-color: rgb(46, 194, 126);</string>
+                          </property>
+                          <item>
+                           <property name="text">
+                            <string>New Item1</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>New Item2</string>
+                           </property>
+                          </item>
+                          <item>
+                           <property name="text">
+                            <string>New Item3</string>
+                           </property>
+                          </item>
+                         </widget>
+                         <widget class="QCheckBox" name="checkBox_2">
+                          <property name="geometry">
+                           <rect>
+                            <x>790</x>
+                            <y>190</y>
+                            <width>101</width>
+                            <height>24</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string>Symptom2</string>
+                          </property>
+                         </widget>
+                         <widget class="QCheckBox" name="checkBox_3">
+                          <property name="geometry">
+                           <rect>
+                            <x>950</x>
+                            <y>190</y>
+                            <width>101</width>
+                            <height>24</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string>Symptom3</string>
+                          </property>
+                         </widget>
+                         <widget class="QLabel" name="label_10">
+                          <property name="geometry">
+                           <rect>
+                            <x>650</x>
+                            <y>330</y>
+                            <width>131</width>
+                            <height>21</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                         <widget class="QLabel" name="label_13">
+                          <property name="geometry">
+                           <rect>
+                            <x>650</x>
+                            <y>300</y>
+                            <width>161</width>
+                            <height>21</height>
+                           </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">font: 700 11pt &quot;Cantarell&quot;;
+color: rgb(94, 92, 100);</string>
+                          </property>
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Selected Symptoms:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                         <widget class="QLabel" name="label_14">
+                          <property name="geometry">
+                           <rect>
+                            <x>70</x>
+                            <y>470</y>
+                            <width>511</width>
+                            <height>101</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="pixmap">
+                           <pixmap resource="resources.qrc">:/images/button.png</pixmap>
+                          </property>
+                          <property name="scaledContents">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                         <widget class="QLineEdit" name="lineEdit_6">
+                          <property name="geometry">
+                           <rect>
+                            <x>150</x>
+                            <y>500</y>
+                            <width>391</width>
+                            <height>31</height>
+                           </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border-style: none;</string>
+                          </property>
+                          <property name="text">
+                           <string>Temperature (Celcius)</string>
+                          </property>
+                          <property name="placeholderText">
+                           <string>Height (Inches)</string>
+                          </property>
+                         </widget>
+                         <widget class="QLabel" name="label_15">
+                          <property name="geometry">
+                           <rect>
+                            <x>96</x>
+                            <y>490</y>
+                            <width>51</width>
+                            <height>51</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="pixmap">
+                           <pixmap resource="resources.qrc">:/images/icons8-temperature-50.png</pixmap>
+                          </property>
+                          <property name="scaledContents">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                         <widget class="QLabel" name="label_28">
+                          <property name="geometry">
+                           <rect>
+                            <x>466</x>
+                            <y>16</y>
+                            <width>51</width>
+                            <height>51</height>
+                           </rect>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                          <property name="pixmap">
+                           <pixmap resource="resources.qrc">:/images/icons8-add-user-male-48.png</pixmap>
+                          </property>
+                          <property name="scaledContents">
+                           <bool>true</bool>
+                          </property>
+                         </widget>
+                         <widget class="Line" name="line_5">
+                          <property name="geometry">
+                           <rect>
+                            <x>540</x>
+                            <y>30</y>
+                            <width>1</width>
+                            <height>30</height>
+                           </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">background-color: rgb(189, 189, 189);</string>
+                          </property>
+                          <property name="orientation">
+                           <enum>Qt::Vertical</enum>
+                          </property>
+                         </widget>
+                         <widget class="QLabel" name="label_29">
+                          <property name="geometry">
+                           <rect>
+                            <x>568</x>
+                            <y>30</y>
+                            <width>181</width>
+                            <height>31</height>
+                           </rect>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(94, 92, 100);
+font: 700 11pt &quot;FontAwesome&quot;;</string>
+                          </property>
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Diagnosis&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
                         </widget>
                        </item>
                       </layout>
                      </widget>
                      <widget class="QWidget" name="new_page">
-                      <widget class="QPlainTextEdit" name="plainTextEdit">
+                      <widget class="QFrame" name="frame_9">
                        <property name="geometry">
                         <rect>
-                         <x>505</x>
-                         <y>271</y>
-                         <width>131</width>
-                         <height>61</height>
+                         <x>2</x>
+                         <y>2</y>
+                         <width>1171</width>
+                         <height>601</height>
                         </rect>
                        </property>
                        <property name="styleSheet">
-                        <string notr="true">color: rgb(0, 0, 0);</string>
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:15px;</string>
                        </property>
-                       <property name="plainText">
-                        <string>Add Facts</string>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
                        </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <widget class="QLabel" name="label_16">
+                        <property name="geometry">
+                         <rect>
+                          <x>120</x>
+                          <y>210</y>
+                          <width>131</width>
+                          <height>18</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 600 11pt &quot;URW Gothic&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>Add Covid Fact</string>
+                        </property>
+                       </widget>
+                       <widget class="QLineEdit" name="lineEdit_7">
+                        <property name="geometry">
+                         <rect>
+                          <x>70</x>
+                          <y>260</y>
+                          <width>211</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border-color: rgb(94, 92, 100);</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="placeholderText">
+                         <string>Add Symptom</string>
+                        </property>
+                       </widget>
+                       <widget class="QCheckBox" name="checkBox_4">
+                        <property name="geometry">
+                         <rect>
+                          <x>110</x>
+                          <y>320</y>
+                          <width>151</width>
+                          <height>21</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Require BP check</string>
+                        </property>
+                       </widget>
+                       <widget class="Line" name="line">
+                        <property name="geometry">
+                         <rect>
+                          <x>310</x>
+                          <y>190</y>
+                          <width>1</width>
+                          <height>221</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(189, 189, 189)</string>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                       </widget>
+                       <widget class="QPushButton" name="pushButton">
+                        <property name="geometry">
+                         <rect>
+                          <x>130</x>
+                          <y>390</y>
+                          <width>111</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(28, 113, 216);</string>
+                        </property>
+                        <property name="text">
+                         <string>Add</string>
+                        </property>
+                       </widget>
+                       <widget class="Line" name="line_2">
+                        <property name="geometry">
+                         <rect>
+                          <x>580</x>
+                          <y>190</y>
+                          <width>1</width>
+                          <height>221</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(189, 189, 189)</string>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                       </widget>
+                       <widget class="Line" name="line_3">
+                        <property name="geometry">
+                         <rect>
+                          <x>850</x>
+                          <y>190</y>
+                          <width>1</width>
+                          <height>221</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(189, 189, 189)</string>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_17">
+                        <property name="geometry">
+                         <rect>
+                          <x>390</x>
+                          <y>210</y>
+                          <width>131</width>
+                          <height>18</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 600 11pt &quot;URW Gothic&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Add Delta Fact&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                       <widget class="QCheckBox" name="checkBox_5">
+                        <property name="geometry">
+                         <rect>
+                          <x>380</x>
+                          <y>320</y>
+                          <width>151</width>
+                          <height>24</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Require BP check</string>
+                        </property>
+                       </widget>
+                       <widget class="QLineEdit" name="lineEdit_8">
+                        <property name="geometry">
+                         <rect>
+                          <x>340</x>
+                          <y>260</y>
+                          <width>211</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border-color: rgb(94, 92, 100);</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="placeholderText">
+                         <string>Add Symptom</string>
+                        </property>
+                       </widget>
+                       <widget class="QPushButton" name="pushButton_2">
+                        <property name="geometry">
+                         <rect>
+                          <x>400</x>
+                          <y>390</y>
+                          <width>111</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(28, 113, 216);</string>
+                        </property>
+                        <property name="text">
+                         <string>Add</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_18">
+                        <property name="geometry">
+                         <rect>
+                          <x>650</x>
+                          <y>210</y>
+                          <width>141</width>
+                          <height>18</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 600 11pt &quot;URW Gothic&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Add Omicron Fact&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_19">
+                        <property name="geometry">
+                         <rect>
+                          <x>890</x>
+                          <y>210</y>
+                          <width>191</width>
+                          <height>18</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 600 11pt &quot;URW Gothic&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Add Underlying Condition&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                       <widget class="QLineEdit" name="lineEdit_9">
+                        <property name="geometry">
+                         <rect>
+                          <x>610</x>
+                          <y>260</y>
+                          <width>211</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border-color: rgb(94, 92, 100);</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="placeholderText">
+                         <string>Add Symptom</string>
+                        </property>
+                       </widget>
+                       <widget class="QCheckBox" name="checkBox_6">
+                        <property name="geometry">
+                         <rect>
+                          <x>640</x>
+                          <y>320</y>
+                          <width>151</width>
+                          <height>24</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Require BP check</string>
+                        </property>
+                       </widget>
+                       <widget class="QPushButton" name="pushButton_3">
+                        <property name="geometry">
+                         <rect>
+                          <x>670</x>
+                          <y>390</y>
+                          <width>111</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(28, 113, 216);</string>
+                        </property>
+                        <property name="text">
+                         <string>Add</string>
+                        </property>
+                       </widget>
+                       <widget class="QPushButton" name="pushButton_4">
+                        <property name="geometry">
+                         <rect>
+                          <x>930</x>
+                          <y>390</y>
+                          <width>111</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(28, 113, 216);</string>
+                        </property>
+                        <property name="text">
+                         <string>Add</string>
+                        </property>
+                       </widget>
+                       <widget class="QCheckBox" name="checkBox_7">
+                        <property name="geometry">
+                         <rect>
+                          <x>910</x>
+                          <y>320</y>
+                          <width>151</width>
+                          <height>24</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Require BP check</string>
+                        </property>
+                       </widget>
+                       <widget class="QLineEdit" name="lineEdit_10">
+                        <property name="geometry">
+                         <rect>
+                          <x>880</x>
+                          <y>260</y>
+                          <width>211</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border-color: rgb(94, 92, 100);
+border-style: solid;</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="placeholderText">
+                         <string>Add Condition</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_20">
+                        <property name="geometry">
+                         <rect>
+                          <x>440</x>
+                          <y>40</y>
+                          <width>91</width>
+                          <height>81</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/images/icons8-add-64.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                       <widget class="Line" name="line_4">
+                        <property name="geometry">
+                         <rect>
+                          <x>550</x>
+                          <y>61</y>
+                          <width>1</width>
+                          <height>50</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(189, 189, 189)</string>
+                        </property>
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_21">
+                        <property name="geometry">
+                         <rect>
+                          <x>580</x>
+                          <y>60</y>
+                          <width>201</width>
+                          <height>61</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 700 11pt &quot;FontAwesome&quot;;
+color: rgb(94, 92, 100);</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;Add Facts&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_22">
+                        <property name="geometry">
+                         <rect>
+                          <x>160</x>
+                          <y>170</y>
+                          <width>31</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/images/icons8-add-48.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_23">
+                        <property name="geometry">
+                         <rect>
+                          <x>430</x>
+                          <y>170</y>
+                          <width>31</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/images/icons8-add-48.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_24">
+                        <property name="geometry">
+                         <rect>
+                          <x>710</x>
+                          <y>170</y>
+                          <width>31</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/images/icons8-add-48.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_25">
+                        <property name="geometry">
+                         <rect>
+                          <x>970</x>
+                          <y>170</y>
+                          <width>31</width>
+                          <height>31</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="resources.qrc">:/images/icons8-add-48.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>true</bool>
+                        </property>
+                       </widget>
+                      </widget>
+                     </widget>
+                     <widget class="QWidget" name="page">
+                      <widget class="QFrame" name="frame_10">
+                       <property name="geometry">
+                        <rect>
+                         <x>10</x>
+                         <y>0</y>
+                         <width>1151</width>
+                         <height>601</height>
+                        </rect>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:15px;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <widget class="QLabel" name="label_26">
+                        <property name="geometry">
+                         <rect>
+                          <x>260</x>
+                          <y>30</y>
+                          <width>631</width>
+                          <height>201</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">font: 700 11pt &quot;Cantarell&quot;;
+color: rgb(28, 113, 216);</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Diagnosis.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_27">
+                        <property name="geometry">
+                         <rect>
+                          <x>150</x>
+                          <y>250</y>
+                          <width>821</width>
+                          <height>151</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">color: rgb(49, 50, 60);</string>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Suggestion&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                        </property>
+                       </widget>
+                       <widget class="QPushButton" name="pushButton_5">
+                        <property name="geometry">
+                         <rect>
+                          <x>450</x>
+                          <y>430</y>
+                          <width>271</width>
+                          <height>41</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border: none;
+font: 700 11pt &quot;Cantarell&quot;;
+background-color: rgb(26, 95, 180);
+border-radius: 8px;</string>
+                        </property>
+                        <property name="text">
+                         <string>Stay up to date about COVID-19</string>
+                        </property>
+                       </widget>
                       </widget>
                      </widget>
                     </widget>

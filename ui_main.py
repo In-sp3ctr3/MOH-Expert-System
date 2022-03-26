@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainwZCBhd.ui'
+## Form generated from reading UI file 'mainDYruYR.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.2.3
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6 import *
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
     QSize, QTime, QUrl, Qt)
@@ -16,10 +15,11 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
-    QLabel, QLineEdit, QMainWindow, QPlainTextEdit,
-    QPushButton, QSizePolicy, QStackedWidget, QTextEdit,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QCommandLinkButton,
+    QFrame, QGridLayout, QHBoxLayout, QLabel,
+    QLineEdit, QMainWindow, QPushButton, QRadioButton,
+    QSizePolicy, QStackedWidget, QTextEdit, QVBoxLayout,
+    QWidget)
 from splash_resource import *
 from resources_rc import *
 
@@ -307,7 +307,7 @@ class Ui_MainWindow(object):
 "LineEdit */\n"
 "QLineEdit {\n"
 "	background-color: rgb(0, 179, 204);\n"
-"\n"
+"   border: 2px solid rgb(64, 71, 88);\n"
 "	padding-left: 10px;\n"
 "	selection-color: rgb(255, 255, 255);\n"
 "	selection-background-color: rgb(255, 121, 198);\n"
@@ -316,9 +316,9 @@ class Ui_MainWindow(object):
 "QLineEdit:hover {\n"
 "	border: 2px solid rgb(64, 71, 88);\n"
 "}\n"
-"QLineEdit:focus {\n"
-"	border: 2px sol"
-                        "id #ff79c6;\n"
+"Q"
+                        "LineEdit:focus {\n"
+"	border: 2px solid #ff79c6;\n"
 "}\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
@@ -353,9 +353,9 @@ class Ui_MainWindow(object):
 "    margin: 0px 21px 0 21px;\n"
 "	border-radius: 0px;\n"
 "}\n"
-"QScrollBar::handle:horizontal {\n"
-"    background: rgb(189,"
-                        " 147, 249);\n"
+"QScrollBar::handle:hori"
+                        "zontal {\n"
+"    background: rgb(189, 147, 249);\n"
 "    min-width: 25px;\n"
 "	border-radius: 4px\n"
 "}\n"
@@ -392,9 +392,9 @@ class Ui_MainWindow(object):
 "    margin: 21px 0 21px 0;\n"
 "	border-radius: 0px;\n"
 " }\n"
-" QScrollBar::handle:vertical {	\n"
-"	background: "
-                        "rgb(189, 147, 249);\n"
+" QScrollBar:"
+                        ":handle:vertical {	\n"
+"	background: rgb(189, 147, 249);\n"
 "    min-height: 25px;\n"
 "	border-radius: 4px\n"
 " }\n"
@@ -427,10 +427,10 @@ class Ui_MainWindow(object):
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "CheckBox */\n"
 "QCheckBox::indicator {\n"
-"    border: 3px solid #6272a4;\n"
+"    border: 3p"
+                        "x solid #6272a4;\n"
 "	width: 15px;\n"
-""
-                        "	height: 15px;\n"
+"	height: 15px;\n"
 "	border-radius: 10px;\n"
 "    background: #6272a4;\n"
 "}\n"
@@ -463,9 +463,9 @@ class Ui_MainWindow(object):
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "ComboBox */\n"
 "QComboBox{\n"
-"	background-color: #6272a4;\n"
-"	border-ra"
-                        "dius: 5px;\n"
+"	ba"
+                        "ckground-color: #6272a4;\n"
+"	border-radius: 5px;\n"
 "	border: 2px solid #6272a4;\n"
 "	padding: 5px;\n"
 "	padding-left: 10px;\n"
@@ -499,9 +499,9 @@ class Ui_MainWindow(object):
 "QSlider::groove:horizontal {\n"
 "    border-radius: 5px;\n"
 "    height: 10px;\n"
-"	margin: 0px;\n"
-"	background-color: #6"
-                        "272a4;\n"
+""
+                        "	margin: 0px;\n"
+"	background-color: #6272a4;\n"
 "}\n"
 "QSlider::groove:horizontal:hover {\n"
 "	background-color: #6272a4;\n"
@@ -541,9 +541,9 @@ class Ui_MainWindow(object):
 "QSlider::handle:vertical:hover {\n"
 "    background-color: rgb(195, 155, 255);\n"
 "}\n"
-"QSlider::handle:vertical:pressed {\n"
-"    backgroun"
-                        "d-color: rgb(255, 121, 198);\n"
+"QSlider::hand"
+                        "le:vertical:pressed {\n"
+"    background-color: rgb(255, 121, 198);\n"
 "}\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
@@ -576,9 +576,9 @@ class Ui_MainWindow(object):
 "	background-color: #7082b6;\n"
 "	border: 2px solid #7082b6;\n"
 "}\n"
-"#pagesContainer QPushButton:pressed {	\n"
-""
-                        "	background-color: #546391;\n"
+"#pa"
+                        "gesContainer QPushButton:pressed {	\n"
+"	background-color: #546391;\n"
 "	border: 2px solid #ff79c6;\n"
 "}\n"
 "\n"
@@ -1098,6 +1098,34 @@ class Ui_MainWindow(object):
 "border: 2px solid rgba(0, 0, 0, 10);")
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
+        self.label_34 = QLabel(self.frame_3)
+        self.label_34.setObjectName(u"label_34")
+        self.label_34.setGeometry(QRect(10, 10, 51, 51))
+        self.label_34.setStyleSheet(u"border: none;")
+        self.label_34.setPixmap(QPixmap(u":/images/icons8-user-64.png"))
+        self.label_34.setScaledContents(True)
+        self.label_35 = QLabel(self.frame_3)
+        self.label_35.setObjectName(u"label_35")
+        self.label_35.setGeometry(QRect(75, 7, 131, 41))
+        self.label_35.setStyleSheet(u"border:none;\n"
+"font: 700 11pt \"Droid Sans Fallback\";\n"
+"color: rgb(26, 95, 180);")
+        self.label_36 = QLabel(self.frame_3)
+        self.label_36.setObjectName(u"label_36")
+        self.label_36.setGeometry(QRect(230, 17, 21, 21))
+        self.label_36.setStyleSheet(u"border: none;")
+        self.label_36.setPixmap(QPixmap(u":/images/icons8-notification-64.png"))
+        self.label_36.setScaledContents(True)
+        self.label_37 = QLabel(self.frame_3)
+        self.label_37.setObjectName(u"label_37")
+        self.label_37.setGeometry(QRect(77, 40, 70, 18))
+        self.label_37.setStyleSheet(u"border: none;\n"
+"color: rgb(189, 189, 189);")
+        self.label_38 = QLabel(self.frame_3)
+        self.label_38.setObjectName(u"label_38")
+        self.label_38.setGeometry(QRect(78, 68, 111, 18))
+        self.label_38.setStyleSheet(u"border:none;\n"
+"")
         self.frame_4 = QFrame(self.home)
         self.frame_4.setObjectName(u"frame_4")
         self.frame_4.setGeometry(QRect(50, 440, 241, 111))
@@ -1130,6 +1158,73 @@ class Ui_MainWindow(object):
 "border: 2px solid rgba(0, 0, 0, 10);")
         self.frame_7.setFrameShape(QFrame.StyledPanel)
         self.frame_7.setFrameShadow(QFrame.Raised)
+        self.frame_11 = QFrame(self.frame_7)
+        self.frame_11.setObjectName(u"frame_11")
+        self.frame_11.setGeometry(QRect(36, 18, 180, 180))
+        self.frame_11.setStyleSheet(u"border-style: none;\n"
+"border-radius: 0px;")
+        self.frame_11.setFrameShape(QFrame.NoFrame)
+        self.frame_11.setFrameShadow(QFrame.Raised)
+        self.frame_13 = QFrame(self.frame_11)
+        self.frame_13.setObjectName(u"frame_13")
+        self.frame_13.setGeometry(QRect(0, 0, 180, 180))
+        self.frame_13.setStyleSheet(u"border-style:none;\n"
+"border-radius:90px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.frame_13.setFrameShape(QFrame.NoFrame)
+        self.frame_13.setFrameShadow(QFrame.Raised)
+        self.frame_14 = QFrame(self.frame_13)
+        self.frame_14.setObjectName(u"frame_14")
+        self.frame_14.setGeometry(QRect(0, 0, 180, 180))
+        self.frame_14.setStyleSheet(u"background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.749 rgba(129, 61, 156, 0), stop:0.75 rgba(53, 132, 228, 255));")
+        self.frame_14.setFrameShape(QFrame.NoFrame)
+        self.frame_14.setFrameShadow(QFrame.Raised)
+        self.frame_15 = QFrame(self.frame_14)
+        self.frame_15.setObjectName(u"frame_15")
+        self.frame_15.setGeometry(QRect(20, 20, 140, 140))
+        self.frame_15.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"border-radius:70px;")
+        self.frame_15.setFrameShape(QFrame.NoFrame)
+        self.frame_15.setFrameShadow(QFrame.Raised)
+        self.label_30 = QLabel(self.frame_15)
+        self.label_30.setObjectName(u"label_30")
+        self.label_30.setGeometry(QRect(23, 41, 101, 18))
+        self.label_30.setStyleSheet(u"background-color: rgba(191, 64, 64, 0);")
+        self.label_31 = QLabel(self.frame_15)
+        self.label_31.setObjectName(u"label_31")
+        self.label_31.setGeometry(QRect(55, 64, 66, 18))
+        self.label_31.setStyleSheet(u"\n"
+"font: 700 11pt \"Bitstream Vera Sans\";")
+        self.frame_16 = QFrame(self.frame_7)
+        self.frame_16.setObjectName(u"frame_16")
+        self.frame_16.setGeometry(QRect(38, 210, 180, 180))
+        self.frame_16.setStyleSheet(u"border-style:none;\n"
+"border-radius:90px;\n"
+"background-color: rgb(255, 255, 255);")
+        self.frame_16.setFrameShape(QFrame.NoFrame)
+        self.frame_16.setFrameShadow(QFrame.Raised)
+        self.frame_17 = QFrame(self.frame_16)
+        self.frame_17.setObjectName(u"frame_17")
+        self.frame_17.setGeometry(QRect(0, 0, 180, 180))
+        self.frame_17.setStyleSheet(u"background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:0.799 rgba(129, 61, 156, 0), stop:0.800 rgb(129, 61, 156));")
+        self.frame_17.setFrameShape(QFrame.NoFrame)
+        self.frame_17.setFrameShadow(QFrame.Raised)
+        self.frame_18 = QFrame(self.frame_17)
+        self.frame_18.setObjectName(u"frame_18")
+        self.frame_18.setGeometry(QRect(20, 20, 140, 140))
+        self.frame_18.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"border-radius:70px;")
+        self.frame_18.setFrameShape(QFrame.NoFrame)
+        self.frame_18.setFrameShadow(QFrame.Raised)
+        self.label_32 = QLabel(self.frame_18)
+        self.label_32.setObjectName(u"label_32")
+        self.label_32.setGeometry(QRect(17, 41, 111, 18))
+        self.label_32.setStyleSheet(u"background-color: rgba(191, 64, 64, 0);")
+        self.label_33 = QLabel(self.frame_18)
+        self.label_33.setObjectName(u"label_33")
+        self.label_33.setGeometry(QRect(55, 64, 66, 18))
+        self.label_33.setStyleSheet(u"\n"
+"font: 700 11pt \"Bitstream Vera Sans\";")
         self.stackedWidget.addWidget(self.home)
         self.widgets = QWidget()
         self.widgets.setObjectName(u"widgets")
@@ -1140,86 +1235,312 @@ class Ui_MainWindow(object):
         self.verticalLayout.setContentsMargins(10, 10, 10, 10)
         self.frame_8 = QFrame(self.widgets)
         self.frame_8.setObjectName(u"frame_8")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.frame_8.sizePolicy().hasHeightForWidth())
+        self.frame_8.setSizePolicy(sizePolicy3)
         self.frame_8.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius:15px;")
         self.frame_8.setFrameShape(QFrame.StyledPanel)
         self.frame_8.setFrameShadow(QFrame.Raised)
         self.label = QLabel(self.frame_8)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(80, 80, 471, 81))
+        self.label.setGeometry(QRect(70, 98, 511, 91))
         self.label.setPixmap(QPixmap(u":/images/button.png"))
         self.label.setScaledContents(True)
         self.label_3 = QLabel(self.frame_8)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(80, 160, 471, 81))
+        self.label_3.setGeometry(QRect(70, 175, 511, 101))
         self.label_3.setPixmap(QPixmap(u":/images/button.png"))
         self.label_3.setScaledContents(True)
         self.label_4 = QLabel(self.frame_8)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(80, 310, 471, 81))
+        self.label_4.setGeometry(QRect(70, 295, 511, 101))
         self.label_4.setPixmap(QPixmap(u":/images/button.png"))
         self.label_4.setScaledContents(True)
         self.label_5 = QLabel(self.frame_8)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(80, 390, 471, 81))
+        self.label_5.setGeometry(QRect(70, 380, 511, 101))
         self.label_5.setPixmap(QPixmap(u":/images/button.png"))
         self.label_5.setScaledContents(True)
         self.label_6 = QLabel(self.frame_8)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(650, 70, 471, 81))
+        self.label_6.setGeometry(QRect(610, 90, 511, 101))
         self.label_6.setPixmap(QPixmap(u":/images/button.png"))
         self.label_6.setScaledContents(True)
         self.label_7 = QLabel(self.frame_8)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(100, 97, 41, 41))
+        self.label_7.setGeometry(QRect(90, 112, 51, 51))
         self.label_7.setPixmap(QPixmap(u":/images/icons8-person-64.png"))
         self.label_7.setScaledContents(True)
         self.label_8 = QLabel(self.frame_8)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(100, 177, 41, 41))
+        self.label_8.setGeometry(QRect(90, 198, 51, 51))
         self.label_8.setPixmap(QPixmap(u":/images/icons8-age-50.png"))
         self.label_8.setScaledContents(True)
         self.label_9 = QLabel(self.frame_8)
         self.label_9.setObjectName(u"label_9")
-        self.label_9.setGeometry(QRect(670, 90, 41, 41))
+        self.label_9.setGeometry(QRect(638, 109, 51, 51))
         self.label_9.setPixmap(QPixmap(u":/images/icons8-weight-64.png"))
         self.label_9.setScaledContents(True)
         self.label_11 = QLabel(self.frame_8)
         self.label_11.setObjectName(u"label_11")
-        self.label_11.setGeometry(QRect(105, 326, 41, 41))
+        self.label_11.setGeometry(QRect(94, 317, 51, 51))
         self.label_11.setPixmap(QPixmap(u":/images/icons8-height-50.png"))
         self.label_11.setScaledContents(True)
         self.lineEdit = QLineEdit(self.frame_8)
         self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setGeometry(QRect(143, 106, 361, 26))
+        self.lineEdit.setGeometry(QRect(150, 126, 381, 31))
+        self.lineEdit.setStyleSheet(u"border-style: none;")
         self.lineEdit_2 = QLineEdit(self.frame_8)
         self.lineEdit_2.setObjectName(u"lineEdit_2")
-        self.lineEdit_2.setGeometry(QRect(146, 186, 361, 26))
+        self.lineEdit_2.setGeometry(QRect(150, 205, 391, 31))
+        self.lineEdit_2.setStyleSheet(u"border-style: none;")
         self.lineEdit_3 = QLineEdit(self.frame_8)
         self.lineEdit_3.setObjectName(u"lineEdit_3")
-        self.lineEdit_3.setGeometry(QRect(148, 335, 361, 26))
+        self.lineEdit_3.setGeometry(QRect(150, 328, 391, 31))
+        self.lineEdit_3.setStyleSheet(u"border-style: none;")
         self.lineEdit_4 = QLineEdit(self.frame_8)
         self.lineEdit_4.setObjectName(u"lineEdit_4")
-        self.lineEdit_4.setGeometry(QRect(148, 415, 361, 26))
+        self.lineEdit_4.setGeometry(QRect(150, 410, 391, 31))
+        self.lineEdit_4.setStyleSheet(u"border-style: none;")
         self.lineEdit_5 = QLineEdit(self.frame_8)
         self.lineEdit_5.setObjectName(u"lineEdit_5")
-        self.lineEdit_5.setGeometry(QRect(715, 95, 361, 26))
+        self.lineEdit_5.setGeometry(QRect(700, 118, 381, 41))
+        self.lineEdit_5.setStyleSheet(u"border-style: none;")
         self.label_12 = QLabel(self.frame_8)
         self.label_12.setObjectName(u"label_12")
-        self.label_12.setGeometry(QRect(106, 409, 41, 41))
+        self.label_12.setGeometry(QRect(94, 400, 51, 51))
         self.label_12.setPixmap(QPixmap(u":/images/icons8-height-50.png"))
         self.label_12.setScaledContents(True)
+        self.radioButton = QRadioButton(self.frame_8)
+        self.radioButton.setObjectName(u"radioButton")
+        self.radioButton.setGeometry(QRect(90, 270, 109, 24))
+        self.radioButton_2 = QRadioButton(self.frame_8)
+        self.radioButton_2.setObjectName(u"radioButton_2")
+        self.radioButton_2.setGeometry(QRect(230, 270, 109, 24))
+        self.commandLinkButton = QCommandLinkButton(self.frame_8)
+        self.commandLinkButton.setObjectName(u"commandLinkButton")
+        self.commandLinkButton.setGeometry(QRect(660, 500, 111, 41))
+        self.commandLinkButton.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"font: 700 11pt \"Cantarell\";\n"
+"border-color: rgb(46, 194, 126);\n"
+"background-color: rgb(46, 194, 126);\n"
+"")
+        self.commandLinkButton.setCheckable(False)
+        self.checkBox = QCheckBox(self.frame_8)
+        self.checkBox.setObjectName(u"checkBox")
+        self.checkBox.setGeometry(QRect(640, 190, 101, 24))
+        self.comboBox = QComboBox(self.frame_8)
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setGeometry(QRect(640, 240, 451, 41))
+        self.comboBox.setStyleSheet(u"color: rgb(94, 92, 100);\n"
+"border-color: rgb(46, 194, 126);")
+        self.checkBox_2 = QCheckBox(self.frame_8)
+        self.checkBox_2.setObjectName(u"checkBox_2")
+        self.checkBox_2.setGeometry(QRect(790, 190, 101, 24))
+        self.checkBox_3 = QCheckBox(self.frame_8)
+        self.checkBox_3.setObjectName(u"checkBox_3")
+        self.checkBox_3.setGeometry(QRect(950, 190, 101, 24))
+        self.label_10 = QLabel(self.frame_8)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setGeometry(QRect(650, 330, 131, 21))
+        self.label_13 = QLabel(self.frame_8)
+        self.label_13.setObjectName(u"label_13")
+        self.label_13.setGeometry(QRect(650, 300, 161, 21))
+        self.label_13.setStyleSheet(u"font: 700 11pt \"Cantarell\";\n"
+"color: rgb(94, 92, 100);")
+        self.label_14 = QLabel(self.frame_8)
+        self.label_14.setObjectName(u"label_14")
+        self.label_14.setGeometry(QRect(70, 470, 511, 101))
+        self.label_14.setPixmap(QPixmap(u":/images/button.png"))
+        self.label_14.setScaledContents(True)
+        self.lineEdit_6 = QLineEdit(self.frame_8)
+        self.lineEdit_6.setObjectName(u"lineEdit_6")
+        self.lineEdit_6.setGeometry(QRect(150, 500, 391, 31))
+        self.lineEdit_6.setStyleSheet(u"border-style: none;")
+        self.label_15 = QLabel(self.frame_8)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setGeometry(QRect(96, 490, 51, 51))
+        self.label_15.setPixmap(QPixmap(u":/images/icons8-temperature-50.png"))
+        self.label_15.setScaledContents(True)
+        self.label_28 = QLabel(self.frame_8)
+        self.label_28.setObjectName(u"label_28")
+        self.label_28.setGeometry(QRect(466, 16, 51, 51))
+        self.label_28.setPixmap(QPixmap(u":/images/icons8-add-user-male-48.png"))
+        self.label_28.setScaledContents(True)
+        self.line_5 = QFrame(self.frame_8)
+        self.line_5.setObjectName(u"line_5")
+        self.line_5.setGeometry(QRect(540, 30, 1, 30))
+        self.line_5.setStyleSheet(u"background-color: rgb(189, 189, 189);")
+        self.line_5.setFrameShape(QFrame.VLine)
+        self.line_5.setFrameShadow(QFrame.Sunken)
+        self.label_29 = QLabel(self.frame_8)
+        self.label_29.setObjectName(u"label_29")
+        self.label_29.setGeometry(QRect(568, 30, 181, 31))
+        self.label_29.setStyleSheet(u"color: rgb(94, 92, 100);\n"
+"font: 700 11pt \"FontAwesome\";")
 
         self.verticalLayout.addWidget(self.frame_8)
 
         self.stackedWidget.addWidget(self.widgets)
         self.new_page = QWidget()
         self.new_page.setObjectName(u"new_page")
-        self.plainTextEdit = QPlainTextEdit(self.new_page)
-        self.plainTextEdit.setObjectName(u"plainTextEdit")
-        self.plainTextEdit.setGeometry(QRect(505, 271, 131, 61))
-        self.plainTextEdit.setStyleSheet(u"color: rgb(0, 0, 0);")
+        self.frame_9 = QFrame(self.new_page)
+        self.frame_9.setObjectName(u"frame_9")
+        self.frame_9.setGeometry(QRect(2, 2, 1171, 601))
+        self.frame_9.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"border-radius:15px;")
+        self.frame_9.setFrameShape(QFrame.StyledPanel)
+        self.frame_9.setFrameShadow(QFrame.Raised)
+        self.label_16 = QLabel(self.frame_9)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setGeometry(QRect(120, 210, 131, 18))
+        self.label_16.setStyleSheet(u"font: 600 11pt \"URW Gothic\";")
+        self.lineEdit_7 = QLineEdit(self.frame_9)
+        self.lineEdit_7.setObjectName(u"lineEdit_7")
+        self.lineEdit_7.setGeometry(QRect(70, 260, 211, 31))
+        self.lineEdit_7.setStyleSheet(u"border-color: rgb(94, 92, 100);")
+        self.checkBox_4 = QCheckBox(self.frame_9)
+        self.checkBox_4.setObjectName(u"checkBox_4")
+        self.checkBox_4.setGeometry(QRect(110, 320, 151, 21))
+        self.line = QFrame(self.frame_9)
+        self.line.setObjectName(u"line")
+        self.line.setGeometry(QRect(310, 190, 1, 221))
+        self.line.setStyleSheet(u"background-color: rgb(189, 189, 189)")
+        self.line.setFrameShape(QFrame.VLine)
+        self.line.setFrameShadow(QFrame.Sunken)
+        self.pushButton = QPushButton(self.frame_9)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(130, 390, 111, 31))
+        self.pushButton.setStyleSheet(u"background-color: rgb(28, 113, 216);")
+        self.line_2 = QFrame(self.frame_9)
+        self.line_2.setObjectName(u"line_2")
+        self.line_2.setGeometry(QRect(580, 190, 1, 221))
+        self.line_2.setStyleSheet(u"background-color: rgb(189, 189, 189)")
+        self.line_2.setFrameShape(QFrame.VLine)
+        self.line_2.setFrameShadow(QFrame.Sunken)
+        self.line_3 = QFrame(self.frame_9)
+        self.line_3.setObjectName(u"line_3")
+        self.line_3.setGeometry(QRect(850, 190, 1, 221))
+        self.line_3.setStyleSheet(u"background-color: rgb(189, 189, 189)")
+        self.line_3.setFrameShape(QFrame.VLine)
+        self.line_3.setFrameShadow(QFrame.Sunken)
+        self.label_17 = QLabel(self.frame_9)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setGeometry(QRect(390, 210, 131, 18))
+        self.label_17.setStyleSheet(u"font: 600 11pt \"URW Gothic\";")
+        self.checkBox_5 = QCheckBox(self.frame_9)
+        self.checkBox_5.setObjectName(u"checkBox_5")
+        self.checkBox_5.setGeometry(QRect(380, 320, 151, 24))
+        self.lineEdit_8 = QLineEdit(self.frame_9)
+        self.lineEdit_8.setObjectName(u"lineEdit_8")
+        self.lineEdit_8.setGeometry(QRect(340, 260, 211, 31))
+        self.lineEdit_8.setStyleSheet(u"border-color: rgb(94, 92, 100);")
+        self.pushButton_2 = QPushButton(self.frame_9)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setGeometry(QRect(400, 390, 111, 31))
+        self.pushButton_2.setStyleSheet(u"background-color: rgb(28, 113, 216);")
+        self.label_18 = QLabel(self.frame_9)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setGeometry(QRect(650, 210, 141, 18))
+        self.label_18.setStyleSheet(u"font: 600 11pt \"URW Gothic\";")
+        self.label_19 = QLabel(self.frame_9)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setGeometry(QRect(890, 210, 191, 18))
+        self.label_19.setStyleSheet(u"font: 600 11pt \"URW Gothic\";")
+        self.lineEdit_9 = QLineEdit(self.frame_9)
+        self.lineEdit_9.setObjectName(u"lineEdit_9")
+        self.lineEdit_9.setGeometry(QRect(610, 260, 211, 31))
+        self.lineEdit_9.setStyleSheet(u"border-color: rgb(94, 92, 100);")
+        self.checkBox_6 = QCheckBox(self.frame_9)
+        self.checkBox_6.setObjectName(u"checkBox_6")
+        self.checkBox_6.setGeometry(QRect(640, 320, 151, 24))
+        self.pushButton_3 = QPushButton(self.frame_9)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setGeometry(QRect(670, 390, 111, 31))
+        self.pushButton_3.setStyleSheet(u"background-color: rgb(28, 113, 216);")
+        self.pushButton_4 = QPushButton(self.frame_9)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.pushButton_4.setGeometry(QRect(930, 390, 111, 31))
+        self.pushButton_4.setStyleSheet(u"background-color: rgb(28, 113, 216);")
+        self.checkBox_7 = QCheckBox(self.frame_9)
+        self.checkBox_7.setObjectName(u"checkBox_7")
+        self.checkBox_7.setGeometry(QRect(910, 320, 151, 24))
+        self.lineEdit_10 = QLineEdit(self.frame_9)
+        self.lineEdit_10.setObjectName(u"lineEdit_10")
+        self.lineEdit_10.setGeometry(QRect(880, 260, 211, 31))
+        self.lineEdit_10.setStyleSheet(u"border-color: rgb(94, 92, 100);\n"
+"border-style: solid;")
+        self.label_20 = QLabel(self.frame_9)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setGeometry(QRect(440, 40, 91, 81))
+        self.label_20.setPixmap(QPixmap(u":/images/icons8-add-64.png"))
+        self.label_20.setScaledContents(True)
+        self.line_4 = QFrame(self.frame_9)
+        self.line_4.setObjectName(u"line_4")
+        self.line_4.setGeometry(QRect(550, 61, 1, 50))
+        self.line_4.setStyleSheet(u"background-color: rgb(189, 189, 189)")
+        self.line_4.setFrameShape(QFrame.VLine)
+        self.line_4.setFrameShadow(QFrame.Sunken)
+        self.label_21 = QLabel(self.frame_9)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setGeometry(QRect(580, 60, 201, 61))
+        self.label_21.setStyleSheet(u"font: 700 11pt \"FontAwesome\";\n"
+"color: rgb(94, 92, 100);")
+        self.label_22 = QLabel(self.frame_9)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setGeometry(QRect(160, 170, 31, 31))
+        self.label_22.setPixmap(QPixmap(u":/images/icons8-add-48.png"))
+        self.label_22.setScaledContents(True)
+        self.label_23 = QLabel(self.frame_9)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setGeometry(QRect(430, 170, 31, 31))
+        self.label_23.setPixmap(QPixmap(u":/images/icons8-add-48.png"))
+        self.label_23.setScaledContents(True)
+        self.label_24 = QLabel(self.frame_9)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setGeometry(QRect(710, 170, 31, 31))
+        self.label_24.setPixmap(QPixmap(u":/images/icons8-add-48.png"))
+        self.label_24.setScaledContents(True)
+        self.label_25 = QLabel(self.frame_9)
+        self.label_25.setObjectName(u"label_25")
+        self.label_25.setGeometry(QRect(970, 170, 31, 31))
+        self.label_25.setPixmap(QPixmap(u":/images/icons8-add-48.png"))
+        self.label_25.setScaledContents(True)
         self.stackedWidget.addWidget(self.new_page)
+        self.page = QWidget()
+        self.page.setObjectName(u"page")
+        self.frame_10 = QFrame(self.page)
+        self.frame_10.setObjectName(u"frame_10")
+        self.frame_10.setGeometry(QRect(10, 0, 1151, 601))
+        self.frame_10.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"border-radius:15px;")
+        self.frame_10.setFrameShape(QFrame.StyledPanel)
+        self.frame_10.setFrameShadow(QFrame.Raised)
+        self.label_26 = QLabel(self.frame_10)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setGeometry(QRect(260, 30, 631, 201))
+        self.label_26.setStyleSheet(u"font: 700 11pt \"Cantarell\";\n"
+"color: rgb(28, 113, 216);")
+        self.label_26.setAlignment(Qt.AlignCenter)
+        self.label_27 = QLabel(self.frame_10)
+        self.label_27.setObjectName(u"label_27")
+        self.label_27.setGeometry(QRect(150, 250, 821, 151))
+        self.label_27.setStyleSheet(u"color: rgb(49, 50, 60);")
+        self.label_27.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
+        self.pushButton_5 = QPushButton(self.frame_10)
+        self.pushButton_5.setObjectName(u"pushButton_5")
+        self.pushButton_5.setGeometry(QRect(450, 430, 271, 41))
+        self.pushButton_5.setStyleSheet(u"border: none;\n"
+"font: 700 11pt \"Cantarell\";\n"
+"background-color: rgb(26, 95, 180);\n"
+"border-radius: 8px;")
+        self.stackedWidget.addWidget(self.page)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
 
@@ -1362,7 +1683,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1419,6 +1740,15 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
+        self.label_34.setText("")
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:14pt;\">John Doe</span></p></body></html>", None))
+        self.label_36.setText("")
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"User ID", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"Health Expert", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Positive Cases", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"50%", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"Omicron Variant", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"20%", None))
         self.label.setText("")
         self.label_3.setText("")
         self.label_4.setText("")
@@ -1434,7 +1764,53 @@ class Ui_MainWindow(object):
         self.lineEdit_4.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Height (Inches)", None))
         self.lineEdit_5.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Weight", None))
         self.label_12.setText("")
-        self.plainTextEdit.setPlainText(QCoreApplication.translate("MainWindow", u"Add Facts", None))
+        self.radioButton.setText(QCoreApplication.translate("MainWindow", u"Male", None))
+        self.radioButton_2.setText(QCoreApplication.translate("MainWindow", u"Female", None))
+        self.commandLinkButton.setText(QCoreApplication.translate("MainWindow", u"Continue", None))
+        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"Symptom1", None))
+        self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"New Item1", None))
+        self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"New Item2", None))
+        self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"New Item3", None))
+
+        self.checkBox_2.setText(QCoreApplication.translate("MainWindow", u"Symptom2", None))
+        self.checkBox_3.setText(QCoreApplication.translate("MainWindow", u"Symptom3", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><br/></p></body></html>", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt;\">Selected Symptoms:</span></p></body></html>", None))
+        self.label_14.setText("")
+        self.lineEdit_6.setText(QCoreApplication.translate("MainWindow", u"Temperature (Celcius)", None))
+        self.lineEdit_6.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Height (Inches)", None))
+        self.label_15.setText("")
+        self.label_28.setText("")
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:18pt;\">Diagnosis</span></p></body></html>", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Add Covid Fact", None))
+        self.lineEdit_7.setText("")
+        self.lineEdit_7.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Add Symptom", None))
+        self.checkBox_4.setText(QCoreApplication.translate("MainWindow", u"Require BP check", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Add", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Add Delta Fact</p></body></html>", None))
+        self.checkBox_5.setText(QCoreApplication.translate("MainWindow", u"Require BP check", None))
+        self.lineEdit_8.setText("")
+        self.lineEdit_8.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Add Symptom", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Add Omicron Fact</p></body></html>", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Add Underlying Condition</p></body></html>", None))
+        self.lineEdit_9.setText("")
+        self.lineEdit_9.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Add Symptom", None))
+        self.checkBox_6.setText(QCoreApplication.translate("MainWindow", u"Require BP check", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Add", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Add", None))
+        self.checkBox_7.setText(QCoreApplication.translate("MainWindow", u"Require BP check", None))
+        self.lineEdit_10.setText("")
+        self.lineEdit_10.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Add Condition", None))
+        self.label_20.setText("")
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:22pt;\">Add Facts</span></p></body></html>", None))
+        self.label_22.setText("")
+        self.label_23.setText("")
+        self.label_24.setText("")
+        self.label_25.setText("")
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:26pt;\">Diagnosis.</span></p></body></html>", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt;\">Suggestion</span></p></body></html>", None))
+        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Stay up to date about COVID-19", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
         self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
         self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))

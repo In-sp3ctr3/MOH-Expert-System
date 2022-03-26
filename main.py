@@ -54,6 +54,8 @@ class MainWindow(QMainWindow):
         global widgets
         widgets = self.ui
 
+
+
         # USE CUSTOM TITLE BAR | USE AS "False" FOR MAC OR LINUX
         # ///////////////////////////////////////////////////////////////
         Settings.ENABLE_CUSTOM_TITLE_BAR = True
@@ -86,7 +88,9 @@ class MainWindow(QMainWindow):
         widgets.btn_widgets.clicked.connect(self.buttonClick)
         widgets.btn_new.clicked.connect(self.buttonClick)
         widgets.btn_save.clicked.connect(self.buttonClick)
+        widgets.comboBox.activated.connect(self.buttonClick)
 
+        #self.progressBarValue(50)
         # EXTRA LEFT BOX
         def openCloseLeftBox():
             UIFunctions.toggleLeftBox(self, True)
@@ -120,6 +124,23 @@ class MainWindow(QMainWindow):
         widgets.stackedWidget.setCurrentWidget(widgets.home)
         widgets.btn_home.setStyleSheet(UIFunctions.selectMenu(widgets.btn_home.styleSheet()))
 
+    def progressBarValue(self, value):
+        progress = (100 - value) / 100.0
+
+        stop1 = str(progress - 0.001)
+        stop2 = str(progress)
+        styleSheet = """QFrame{
+                                background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:{stop1} rgba(192, 28, 40, 0), stop:{stop2} rgba(129, 61, 156, 255));
+                                border-radius: 99px;
+                                border-style:none;
+                                } """
+        newStylesheet = styleSheet.replace("{stop1}", stop1).replace("{stop2}", stop2)
+        self.ui.Progress1.setStyleSheet(newStylesheet)
+        widgets.percentage.setText(f'{value}%')
+
+
+        
+
 
     # BUTTONS CLICK
     # Post here your functions for clicked buttons
@@ -147,8 +168,9 @@ class MainWindow(QMainWindow):
             UIFunctions.resetStyle(self, btnName) # RESET ANOTHERS BUTTONS SELECTED
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet())) # SELECT MENU
 
-        if btnName == "btn_save":
-            print("Save BTN clicked!")
+        if btnName == "comboBox":
+            print("SSomething BTN clicked!")
+            widgets.label_10.setText(f'{widgets.comboBox.currentText()}')
 
         # PRINT BTN NAME
         print(f'Button "{btnName}" pressed!')

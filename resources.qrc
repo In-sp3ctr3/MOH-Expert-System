@@ -1,5 +1,12 @@
 <RCC>
   <qresource prefix="images">
+    <file>icons8-notification-64.png</file>
+    <file>icons8-user-64.png</file>
+    <file>icons8-user-58.png</file>
+    <file>icons8-add-user-male-48.png</file>
+    <file>icons8-add-48.png</file>
+    <file>icons8-add-64.png</file>
+    <file>icons8-temperature-50.png</file>
     <file>icons8-age-50.png</file>
     <file>icons8-height-50.png</file>
     <file>icons8-person-64.png</file>
