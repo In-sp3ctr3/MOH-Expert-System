@@ -1,5 +1,12 @@
 <RCC>
   <qresource prefix="images">
+    <file>list3.png</file>
+    <file>line2.png</file>
+    <file>line1.png</file>
+    <file>icons8-virus-48.png</file>
+    <file>icons8-user-32.png</file>
+    <file>Convalescent_Care.png</file>
+    <file>178385.png</file>
     <file>icons8-notification-64.png</file>
     <file>icons8-user-64.png</file>
     <file>icons8-user-58.png</file>

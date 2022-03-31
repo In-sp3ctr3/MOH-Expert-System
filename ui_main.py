@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainDYruYR.ui'
+## Form generated from reading UI file 'mainjmlJrj.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.3
+## Created by: Qt User Interface Compiler version 6.2.4
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -22,6 +22,7 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QCommandLinkB
     QWidget)
 from splash_resource import *
 from resources_rc import *
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -81,7 +82,7 @@ class Ui_MainWindow(object):
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "Bg App */\n"
 "#bgApp {	\n"
-"	background-color: #f8f8f2;\n"
+"	background-color: rgb(244, 245, 248);\n"
 "	border: 1px solid #CCC;\n"
 "    color: #44475a;\n"
 "}\n"
@@ -97,8 +98,8 @@ class Ui_MainWindow(object):
 "	background-position: centered;\n"
 "	background-repeat: no-repeat;\n"
 "}\n"
-"#titleLeftApp { font: 63 12pt \"Segoe UI Semibold\"; color: #"
-                        "f8f8f2; }\n"
+"#titleLeftApp { font: 63 12pt \"Segoe UI Semibold\""
+                        "; color: #f8f8f2; }\n"
 "#titleLeftDescription { font: 8pt \"Segoe UI\"; color: #bd93f9; }\n"
 "\n"
 "/* MENUS */\n"
@@ -134,9 +135,9 @@ class Ui_MainWindow(object):
 "}\n"
 "#bottomMenu .QPushButton:pressed {	\n"
 "	background-color: #ff79c6;\n"
-"	color: rgb(255, 255, 255);\n"
-""
-                        "}\n"
+"	color: rgb(255, 255"
+                        ", 255);\n"
+"}\n"
 "#leftMenuFrame{\n"
 "\n"
 "}\n"
@@ -178,10 +179,10 @@ class Ui_MainWindow(object):
 "#extraIcon {\n"
 "	background-position: center;\n"
 "	background-repeat: no-repeat;\n"
-"	background-image: url(:/icons/images/icons/icon_settings.png);\n"
+"	background-image: url(:/icons/images/icons/icon_settings.png)"
+                        ";\n"
 "}\n"
-""
-                        "\n"
+"\n"
 "/* Label */\n"
 "#extraLabel { color: rgb(255, 255, 255); }\n"
 "\n"
@@ -211,8 +212,8 @@ class Ui_MainWindow(object):
 "}\n"
 "#extraTopMenu .QPushButton:pressed {	\n"
 "	background-color: rgb(189, 147, 249);\n"
-"	color: rgb(255, 255, 255)"
-                        ";\n"
+"	color: rgb(25"
+                        "5, 255, 255);\n"
 "}\n"
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
@@ -240,9 +241,9 @@ class Ui_MainWindow(object):
 "#bottomBar { background-color: #495474 }\n"
 "#bottomBar QLabel { font-size: 11px; color: #f8f8f2; padding-left: 10px; padding-right: 10px; padding-bottom: 2px; }\n"
 "\n"
-"/* CONTENT SETTINGS */\n"
-"/* M"
-                        "ENUS */\n"
+"/* CONTENT SETTINGS"
+                        " */\n"
+"/* MENUS */\n"
 "#contentSettings .QPushButton {\n"
 "    background-position: left center;\n"
 "    background-repeat: no-repeat;\n"
@@ -277,8 +278,8 @@ class Ui_MainWindow(object):
 "}\n"
 "QTableWidget::item:selected{\n"
 "	background-color: rgb(189, 147, 249);\n"
-"    color: #f8f8f2;"
-                        "\n"
+"    col"
+                        "or: #f8f8f2;\n"
 "}\n"
 "QHeaderView::section{\n"
 "	background-color: rgb(0, 179, 204);\n"
@@ -314,10 +315,10 @@ class Ui_MainWindow(object):
 "	color: rgb(189, 189, 189);\n"
 "}\n"
 "QLineEdit:hover {\n"
-"	border: 2px solid rgb(64, 71, 88);\n"
+"	border: 2px solid rgb(64, 71, 88);"
+                        "\n"
 "}\n"
-"Q"
-                        "LineEdit:focus {\n"
+"QLineEdit:focus {\n"
 "	border: 2px solid #ff79c6;\n"
 "}\n"
 "\n"
@@ -353,8 +354,8 @@ class Ui_MainWindow(object):
 "    margin: 0px 21px 0 21px;\n"
 "	border-radius: 0px;\n"
 "}\n"
-"QScrollBar::handle:hori"
-                        "zontal {\n"
+"QScrollBar:"
+                        ":handle:horizontal {\n"
 "    background: rgb(189, 147, 249);\n"
 "    min-width: 25px;\n"
 "	border-radius: 4px\n"
@@ -392,8 +393,8 @@ class Ui_MainWindow(object):
 "    margin: 21px 0 21px 0;\n"
 "	border-radius: 0px;\n"
 " }\n"
-" QScrollBar:"
-                        ":handle:vertical {	\n"
+""
+                        " QScrollBar::handle:vertical {	\n"
 "	background: rgb(189, 147, 249);\n"
 "    min-height: 25px;\n"
 "	border-radius: 4px\n"
@@ -427,8 +428,8 @@ class Ui_MainWindow(object):
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "CheckBox */\n"
 "QCheckBox::indicator {\n"
-"    border: 3p"
-                        "x solid #6272a4;\n"
+"  "
+                        "  border: 3px solid #6272a4;\n"
 "	width: 15px;\n"
 "	height: 15px;\n"
 "	border-radius: 10px;\n"
@@ -462,9 +463,9 @@ class Ui_MainWindow(object):
 "\n"
 "/* /////////////////////////////////////////////////////////////////////////////////////////////////\n"
 "ComboBox */\n"
-"QComboBox{\n"
-"	ba"
-                        "ckground-color: #6272a4;\n"
+"QCombo"
+                        "Box{\n"
+"	background-color: #6272a4;\n"
 "	border-radius: 5px;\n"
 "	border: 2px solid #6272a4;\n"
 "	padding: 5px;\n"
@@ -498,9 +499,9 @@ class Ui_MainWindow(object):
 "Sliders */\n"
 "QSlider::groove:horizontal {\n"
 "    border-radius: 5px;\n"
-"    height: 10px;\n"
-""
-                        "	margin: 0px;\n"
+"    height"
+                        ": 10px;\n"
+"	margin: 0px;\n"
 "	background-color: #6272a4;\n"
 "}\n"
 "QSlider::groove:horizontal:hover {\n"
@@ -541,8 +542,8 @@ class Ui_MainWindow(object):
 "QSlider::handle:vertical:hover {\n"
 "    background-color: rgb(195, 155, 255);\n"
 "}\n"
-"QSlider::hand"
-                        "le:vertical:pressed {\n"
+"Q"
+                        "Slider::handle:vertical:pressed {\n"
 "    background-color: rgb(255, 121, 198);\n"
 "}\n"
 "\n"
@@ -575,9 +576,9 @@ class Ui_MainWindow(object):
 "#pagesContainer QPushButton:hover {\n"
 "	background-color: #7082b6;\n"
 "	border: 2px solid #7082b6;\n"
-"}\n"
-"#pa"
-                        "gesContainer QPushButton:pressed {	\n"
+""
+                        "}\n"
+"#pagesContainer QPushButton:pressed {	\n"
 "	background-color: #546391;\n"
 "	border: 2px solid #ff79c6;\n"
 "}\n"
@@ -1079,31 +1080,49 @@ class Ui_MainWindow(object):
         self.frame.setGeometry(QRect(40, 20, 811, 121))
         self.frame.setStyleSheet(u"background-color: rgb(28, 113, 216);\n"
 "border-radius: 10px;\n"
-"border: 2px solid rgba(0, 0, 0, 10);")
+"")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
+        self.label_39 = QLabel(self.frame)
+        self.label_39.setObjectName(u"label_39")
+        self.label_39.setGeometry(QRect(136, 13, 81, 31))
+        self.label_39.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"font: 400 11pt \"Lato\";")
+        self.label_40 = QLabel(self.frame)
+        self.label_40.setObjectName(u"label_40")
+        self.label_40.setGeometry(QRect(172, 10, 91, 41))
+        self.label_40.setStyleSheet(u"font: 800 22pt \"Lato\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_41 = QLabel(self.frame)
+        self.label_41.setObjectName(u"label_41")
+        self.label_41.setGeometry(QRect(140, 80, 601, 18))
+        self.label_41.setStyleSheet(u"font: 11pt \"Lato\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_42 = QLabel(self.frame)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setGeometry(QRect(20, 20, 91, 81))
+        self.label_42.setPixmap(QPixmap(u":/images/Convalescent_Care.png"))
+        self.label_42.setScaledContents(True)
         self.frame_2 = QFrame(self.home)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setGeometry(QRect(50, 170, 801, 231))
+        self.frame_2.setGeometry(QRect(40, 194, 801, 231))
         self.frame_2.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
-"border-radius: 10px;\n"
-"border: 2px solid rgba(0, 0, 0, 10);")
+"border-radius: 10px;")
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
         self.frame_3 = QFrame(self.home)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setGeometry(QRect(879, 19, 271, 101))
         self.frame_3.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
-"border-radius: 15px;\n"
-"border: 2px solid rgba(0, 0, 0, 10);")
+"border-radius: 15px;")
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.label_34 = QLabel(self.frame_3)
         self.label_34.setObjectName(u"label_34")
-        self.label_34.setGeometry(QRect(10, 10, 51, 51))
+        self.label_34.setGeometry(QRect(20, 0, 41, 61))
         self.label_34.setStyleSheet(u"border: none;")
-        self.label_34.setPixmap(QPixmap(u":/images/icons8-user-64.png"))
-        self.label_34.setScaledContents(True)
+        self.label_34.setPixmap(QPixmap(u":/images/icons8-user-32.png"))
+        self.label_34.setScaledContents(False)
         self.label_35 = QLabel(self.frame_3)
         self.label_35.setObjectName(u"label_35")
         self.label_35.setGeometry(QRect(75, 7, 131, 41))
@@ -1128,34 +1147,91 @@ class Ui_MainWindow(object):
 "")
         self.frame_4 = QFrame(self.home)
         self.frame_4.setObjectName(u"frame_4")
-        self.frame_4.setGeometry(QRect(50, 440, 241, 111))
-        self.frame_4.setStyleSheet(u"background-color: rgb(224, 224, 224);\n"
+        self.frame_4.setGeometry(QRect(41, 470, 241, 111))
+        self.frame_4.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius: 18px;\n"
 "")
         self.frame_4.setFrameShape(QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Raised)
+        self.label_46 = QLabel(self.frame_4)
+        self.label_46.setObjectName(u"label_46")
+        self.label_46.setGeometry(QRect(25, 13, 31, 31))
+        self.label_46.setStyleSheet(u"")
+        self.label_46.setPixmap(QPixmap(u":/images/icons8-virus-48.png"))
+        self.label_46.setScaledContents(True)
+        self.label_49 = QLabel(self.frame_4)
+        self.label_49.setObjectName(u"label_49")
+        self.label_49.setGeometry(QRect(0, 50, 151, 51))
+        self.label_49.setPixmap(QPixmap(u":/images/line1.png"))
+        self.label_49.setScaledContents(True)
+        self.label_52 = QLabel(self.frame_4)
+        self.label_52.setObjectName(u"label_52")
+        self.label_52.setGeometry(QRect(181, 51, 61, 31))
+        self.label_52.setStyleSheet(u"font: 900 18pt \"Cantarell\";")
+        self.label_55 = QLabel(self.frame_4)
+        self.label_55.setObjectName(u"label_55")
+        self.label_55.setGeometry(QRect(72, 17, 66, 18))
+        self.label_55.setStyleSheet(u"font: 700 11pt \"Cantarell\";")
         self.frame_5 = QFrame(self.home)
         self.frame_5.setObjectName(u"frame_5")
-        self.frame_5.setGeometry(QRect(320, 440, 241, 111))
-        self.frame_5.setStyleSheet(u"background-color: rgb(255, 220, 198);\n"
+        self.frame_5.setGeometry(QRect(320, 470, 241, 111))
+        self.frame_5.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius: 18px;\n"
 "")
         self.frame_5.setFrameShape(QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QFrame.Raised)
+        self.label_47 = QLabel(self.frame_5)
+        self.label_47.setObjectName(u"label_47")
+        self.label_47.setGeometry(QRect(22, 9, 31, 31))
+        self.label_47.setStyleSheet(u"")
+        self.label_47.setPixmap(QPixmap(u":/images/icons8-virus-48.png"))
+        self.label_47.setScaledContents(True)
+        self.label_50 = QLabel(self.frame_5)
+        self.label_50.setObjectName(u"label_50")
+        self.label_50.setGeometry(QRect(-3, 49, 141, 51))
+        self.label_50.setPixmap(QPixmap(u":/images/line2.png"))
+        self.label_50.setScaledContents(True)
+        self.label_53 = QLabel(self.frame_5)
+        self.label_53.setObjectName(u"label_53")
+        self.label_53.setGeometry(QRect(181, 50, 61, 31))
+        self.label_53.setStyleSheet(u"font: 900 18pt \"Cantarell\";")
+        self.label_56 = QLabel(self.frame_5)
+        self.label_56.setObjectName(u"label_56")
+        self.label_56.setGeometry(QRect(71, 14, 66, 18))
+        self.label_56.setStyleSheet(u"font: 700 11pt \"Cantarell\";")
         self.frame_6 = QFrame(self.home)
         self.frame_6.setObjectName(u"frame_6")
-        self.frame_6.setGeometry(QRect(590, 440, 261, 111))
-        self.frame_6.setStyleSheet(u"background-color: rgb(255, 239, 199);\n"
+        self.frame_6.setGeometry(QRect(590, 470, 261, 111))
+        self.frame_6.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius: 18px;\n"
 "")
         self.frame_6.setFrameShape(QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QFrame.Raised)
+        self.label_48 = QLabel(self.frame_6)
+        self.label_48.setObjectName(u"label_48")
+        self.label_48.setGeometry(QRect(21, 8, 31, 31))
+        self.label_48.setStyleSheet(u"")
+        self.label_48.setPixmap(QPixmap(u":/images/icons8-virus-48.png"))
+        self.label_48.setScaledContents(True)
+        self.label_51 = QLabel(self.frame_6)
+        self.label_51.setObjectName(u"label_51")
+        self.label_51.setGeometry(QRect(-1, 51, 121, 51))
+        self.label_51.setPixmap(QPixmap(u":/images/list3.png"))
+        self.label_51.setScaledContents(True)
+        self.label_54 = QLabel(self.frame_6)
+        self.label_54.setObjectName(u"label_54")
+        self.label_54.setGeometry(QRect(198, 50, 61, 31))
+        self.label_54.setStyleSheet(u"font: 900 18pt \"Cantarell\";")
+        self.label_57 = QLabel(self.frame_6)
+        self.label_57.setObjectName(u"label_57")
+        self.label_57.setGeometry(QRect(71, 12, 66, 18))
+        self.label_57.setStyleSheet(u"font: 700 11pt \"Cantarell\";")
         self.frame_7 = QFrame(self.home)
         self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setGeometry(QRect(890, 150, 251, 401))
+        self.frame_7.setGeometry(QRect(890, 176, 251, 401))
         self.frame_7.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
-"border: 2px solid rgba(0, 0, 0, 10);")
+"")
         self.frame_7.setFrameShape(QFrame.StyledPanel)
         self.frame_7.setFrameShadow(QFrame.Raised)
         self.frame_11 = QFrame(self.frame_7)
@@ -1170,7 +1246,11 @@ class Ui_MainWindow(object):
         self.frame_13.setGeometry(QRect(0, 0, 180, 180))
         self.frame_13.setStyleSheet(u"border-style:none;\n"
 "border-radius:90px;\n"
-"background-color: rgb(255, 255, 255);")
+"background-color: ;\n"
+"background-color: ;\n"
+"background-color: ;\n"
+"background-color: ;\n"
+"background-color: rgba(161, 222, 241, 15);")
         self.frame_13.setFrameShape(QFrame.NoFrame)
         self.frame_13.setFrameShadow(QFrame.Raised)
         self.frame_14 = QFrame(self.frame_13)
@@ -1200,7 +1280,9 @@ class Ui_MainWindow(object):
         self.frame_16.setGeometry(QRect(38, 210, 180, 180))
         self.frame_16.setStyleSheet(u"border-style:none;\n"
 "border-radius:90px;\n"
-"background-color: rgb(255, 255, 255);")
+"background-color: ;\n"
+"background-color: ;\n"
+"background-color: rgba(221, 179, 255, 20);")
         self.frame_16.setFrameShape(QFrame.NoFrame)
         self.frame_16.setFrameShadow(QFrame.Raised)
         self.frame_17 = QFrame(self.frame_16)
@@ -1225,6 +1307,36 @@ class Ui_MainWindow(object):
         self.label_33.setGeometry(QRect(55, 64, 66, 18))
         self.label_33.setStyleSheet(u"\n"
 "font: 700 11pt \"Bitstream Vera Sans\";")
+        self.label_43 = QLabel(self.home)
+        self.label_43.setObjectName(u"label_43")
+        self.label_43.setGeometry(QRect(46, 150, 91, 31))
+        self.label_43.setStyleSheet(u"font: 900 12pt \"Lato\";")
+        self.widget = QWidget(self.home)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(47, 176, 24, 5))
+        self.widget.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(38, 162, 105, 255), stop:1 rgba(0, 177, 255, 255));\n"
+"border-radius: 2px;")
+        self.label_44 = QLabel(self.home)
+        self.label_44.setObjectName(u"label_44")
+        self.label_44.setGeometry(QRect(43, 429, 91, 31))
+        self.label_44.setStyleSheet(u"font: 900 12pt \"Lato\";")
+        self.widget_2 = QWidget(self.home)
+        self.widget_2.setObjectName(u"widget_2")
+        self.widget_2.setGeometry(QRect(45, 455, 24, 5))
+        self.widget_2.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(38, 162, 105, 255), stop:1 rgba(0, 177, 255, 255));\n"
+"border-radius: 2px;")
+        self.label_45 = QLabel(self.home)
+        self.label_45.setObjectName(u"label_45")
+        self.label_45.setGeometry(QRect(892, 135, 91, 31))
+        self.label_45.setStyleSheet(u"font: 900 12pt \"Lato\";")
+        self.widget_3 = QWidget(self.home)
+        self.widget_3.setObjectName(u"widget_3")
+        self.widget_3.setGeometry(QRect(893, 160, 24, 5))
+        self.widget_3.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(38, 162, 105, 255), stop:1 rgba(0, 177, 255, 255));\n"
+"border-radius: 2px;")
         self.stackedWidget.addWidget(self.home)
         self.widgets = QWidget()
         self.widgets.setObjectName(u"widgets")
@@ -1740,15 +1852,34 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:20pt;\">Hi</span></p></body></html>", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>User.</p></body></html>", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Remember to check the latest COVID-19 updates at the Ministry Website</p></body></html>", None))
+        self.label_42.setText("")
         self.label_34.setText("")
         self.label_35.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:14pt;\">John Doe</span></p></body></html>", None))
         self.label_36.setText("")
         self.label_37.setText(QCoreApplication.translate("MainWindow", u"User ID", None))
         self.label_38.setText(QCoreApplication.translate("MainWindow", u"Health Expert", None))
+        self.label_46.setText("")
+        self.label_49.setText("")
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>0%</p></body></html>", None))
+        self.label_55.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Covid</p></body></html>", None))
+        self.label_47.setText("")
+        self.label_50.setText("")
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>0%</p></body></html>", None))
+        self.label_56.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Delta</p></body></html>", None))
+        self.label_48.setText("")
+        self.label_51.setText("")
+        self.label_54.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>0%</p></body></html>", None))
+        self.label_57.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>Omicron</p></body></html>", None))
         self.label_30.setText(QCoreApplication.translate("MainWindow", u"Positive Cases", None))
         self.label_31.setText(QCoreApplication.translate("MainWindow", u"50%", None))
         self.label_32.setText(QCoreApplication.translate("MainWindow", u"Omicron Variant", None))
         self.label_33.setText(QCoreApplication.translate("MainWindow", u"20%", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Overview", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Stats", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Cases", None))
         self.label.setText("")
         self.label_3.setText("")
         self.label_4.setText("")
@@ -1777,8 +1908,8 @@ class Ui_MainWindow(object):
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><br/></p></body></html>", None))
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt;\">Selected Symptoms:</span></p></body></html>", None))
         self.label_14.setText("")
-        self.lineEdit_6.setText(QCoreApplication.translate("MainWindow", u"Temperature (Celcius)", None))
-        self.lineEdit_6.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Height (Inches)", None))
+        self.lineEdit_6.setText("")
+        self.lineEdit_6.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Temperature (Celsius)", None))
         self.label_15.setText("")
         self.label_28.setText("")
         self.label_29.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:18pt;\">Diagnosis</span></p></body></html>", None))
