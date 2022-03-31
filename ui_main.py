@@ -1803,14 +1803,14 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"PyDracula", None))
+        self.titleLeftApp.setText(QCoreApplication.translate("MainWindow", u"Covidex", None))
         self.titleLeftDescription.setText("")
         self.label_2.setText("")
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
-        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
-        self.btn_new.setText(QCoreApplication.translate("MainWindow", u"New", None))
-        self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Diagnosis", None))
+        self.btn_new.setText(QCoreApplication.translate("MainWindow", u"Add Facts", None))
+        self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Statistics", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
         self.extraLabel.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
