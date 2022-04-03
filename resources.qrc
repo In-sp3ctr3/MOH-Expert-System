@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="images">
+    <file>icons8-error-48.png</file>
+    <file>icons8-ok.gif</file>
     <file>list3.png</file>
     <file>line2.png</file>
     <file>line1.png</file>
