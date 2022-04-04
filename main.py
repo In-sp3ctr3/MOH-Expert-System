@@ -84,6 +84,7 @@ class MainWindow(QMainWindow):
         widgets.add_button_omicron.clicked.connect(self.buttonClick)
         widgets.add_button_conditions.clicked.connect(self.buttonClick)
 
+        #initialize
         self.progressBarValue()
         self.setHomePageStats()
         self.setSymptoms()
