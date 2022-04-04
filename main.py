@@ -68,7 +68,6 @@ class MainWindow(QMainWindow):
 
         # BUTTONS CLICK SECTION
 
-        # LEFT MENUS
         widgets.btn_home.clicked.connect(self.buttonClick)
         widgets.btn_widgets.clicked.connect(self.buttonClick)
         widgets.btn_new.clicked.connect(self.buttonClick)
