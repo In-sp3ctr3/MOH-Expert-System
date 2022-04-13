@@ -2,7 +2,7 @@ from pyswip import Prolog
 prolog = Prolog()
 prolog.consult("prolog.pl")
 
-
+s = 'ddddd'
 symptoms = list(prolog.query("covid_symptoms(X)"))
 symptoms.extend((list(prolog.query("delta_symptoms(X)"))))
 symptoms.extend((list(prolog.query("omicron_symptoms(X)"))))
@@ -13,7 +13,12 @@ list2 = ['Chest Pain', 'Dizzyness', 'Dry Cough', 'Fainting', 'Loss of Taste', 'M
 thing = "raa ass asas asa"
 print(thing)
 print(list(prolog.query(f"update_covid_symptoms('{thing}')")))
-print(list(prolog.query("covid_symptoms(X)")))
+x = list(prolog.query("covid_symptoms(X)"))
+d = x[0]['X']
+
+d.append(s)
+
+print(d)
 
 """if(all(x in list2 for x in list1)):
 	print('Matches')"""

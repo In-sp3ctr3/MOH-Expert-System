@@ -5,6 +5,7 @@
 import sys
 import os
 import platform
+import fileinput
 from modules import *
 from widgets import *
 from PySide6 import *
@@ -120,7 +121,7 @@ class MainWindow(QMainWindow):
         stop1 = str(progress - 0.001)
         stop2 = str(progress)
         styleSheet = """QFrame{
-                                background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:{stop1} rgba(129, 61, 156, 0), stop:{stop2} rgba(53, 132, 228, 255));
+                                background-color: qconicalgradient(cx:0.5, cy:0.5, angle:90, stop:{stop1} rgba(129, 61, 156, 0), stop:{stop2} rgb(129, 61, 156));
                                 } """
         newStylesheet = styleSheet.replace("{stop1}", stop1).replace("{stop2}", stop2)
         self.ui.frame_17.setStyleSheet(newStylesheet)
@@ -309,9 +310,37 @@ class MainWindow(QMainWindow):
                 return
 
             list(prolog.query(f"update_covid_symptoms('{widgets.add_covid.text().strip()}')"))
+
+            x = list(prolog.query("covid_symptoms(X)"))
+            q = x[0]['X']
+            q.append(widgets.add_covid.text().strip())
+            changed = False
+            with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "covid_symptoms(" in line and not changed:
+                            new_line = line.replace(line, f"covid_symptoms({q}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
+
             if(widgets.bp_check_covid.isChecked()):
                 list(prolog.query(f"update_bp_required('{widgets.add_covid.text().strip()}')"))
             self.setSymptoms()
+
+            x = list(prolog.query("blood_pressure_check_required(X)"))
+            q = x[0]['X']
+            q.append(widgets.add_covid.text().strip())
+            changed = False
+            with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "blood_pressure_check_required(" in line and not changed:
+                            new_line = line.replace(line, f"blood_pressure_check_required({q}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
+
             widgets.add_covid.clear()
             widgets.success_message.show()
             QtCore.QTimer.singleShot(1800, lambda: widgets.success_message.hide())
@@ -323,9 +352,37 @@ class MainWindow(QMainWindow):
                 return
 
             list(prolog.query(f"update_delta_symptoms('{widgets.add_delta.text().strip()}')"))
+            
+            x = list(prolog.query("delta_symptoms(X)"))
+            q = x[0]['X']
+            q.append(widgets.add_delta.text().strip())
+            changed = False
+            with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "delta_symptoms(" in line and not changed:
+                            new_line = line.replace(line, f"delta_symptoms({q}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
+
             if(widgets.bp_check_delta.isChecked()):
                 list(prolog.query(f"update_bp_required('{widgets.add_delta.text().strip()}')"))
             self.setSymptoms()
+
+            x = list(prolog.query("blood_pressure_check_required(X)"))
+            q = x[0]['X']
+            q.append(widgets.add_delta.text().strip())
+            changed = False
+            with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "blood_pressure_check_required(" in line and not changed:
+                            new_line = line.replace(line, f"blood_pressure_check_required({q}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
+
             widgets.add_delta.clear()
             widgets.success_message.show()
             QtCore.QTimer.singleShot(1800, lambda: widgets.success_message.hide())
@@ -337,9 +394,35 @@ class MainWindow(QMainWindow):
                 return
 
             list(prolog.query(f"update_omicron_symptoms('{widgets.add_omicron.text().strip()}')"))
+            x = list(prolog.query("omicron_symptoms(X)"))
+            q = x[0]['X']
+            q.append(widgets.add_omicron.text().strip())
+            changed = False
+            with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "omicron_symptoms(" in line and not changed:
+                            new_line = line.replace(line, f"omicron_symptoms({q}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
             if(widgets.bp_check_omicron.isChecked()):
                 list(prolog.query(f"update_bp_required('{widgets.add_omicron.text().strip()}')"))
             self.setSymptoms()
+
+            x = list(prolog.query("blood_pressure_check_required(X)"))
+            q = x[0]['X']
+            q.append(widgets.add_omicron.text().strip())
+            changed = False
+            with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "blood_pressure_check_required(" in line and not changed:
+                            new_line = line.replace(line, f"blood_pressure_check_required({q}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
+
             widgets.add_omicron.clear()
             widgets.success_message.show()
             QtCore.QTimer.singleShot(1800, lambda: widgets.success_message.hide())
@@ -351,9 +434,37 @@ class MainWindow(QMainWindow):
                 return
 
             list(prolog.query(f"update_conditions('{widgets.add_conditions.text().strip()}')"))
+
+            x = list(prolog.query("underlying_conditions(X)"))
+            q = x[0]['X']
+            q.append(widgets.add_conditions.text().strip())
+            changed = False
+            with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "underlying_conditions(" in line and not changed:
+                            new_line = line.replace(line, f"underlying_conditions({q}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
+
             if(widgets.bp_check_conditions.isChecked()):
                 list(prolog.query(f"update_bp_required('{widgets.add_conditions.text().strip()}')"))
             self.setSymptoms()
+
+            x = list(prolog.query("blood_pressure_check_required(X)"))
+            q = x[0]['X']
+            q.append(widgets.add_conditions.text().strip())
+            changed = False
+            with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "blood_pressure_check_required(" in line and not changed:
+                            new_line = line.replace(line, f"blood_pressure_check_required({q}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
+
             widgets.add_conditions.clear()
             widgets.success_message.show()
             QtCore.QTimer.singleShot(1800, lambda: widgets.success_message.hide())
@@ -374,13 +485,27 @@ class MainWindow(QMainWindow):
             height = (int(widgets.form_height_inches.value())* 0.0254)+(int(widgets.form_height_feet.value())* 0.305 )
             #convert weight
             body_max_index = (int(widgets.form_weight.value())/height*height)
-            if body_max_index >=40:
+            if body_max_index >= 40:
                 risk +=1
                 print('too fat')
             #high or low blood pressure
             if not widgets.hypertension.isHidden():
                 if widgets.form_systolic.value() < 90 or widgets.form_diastolic.value < 60:
                     risk += 1
+                    b = list(prolog.query("blood_pressure(X)"))
+                    bp = b[0]['X']
+                    prolog.retractall("blood_pressure(_)")
+                    prolog.asserta(f"blood_pressure({bp+1})")
+                    changed = False
+                    with fileinput.input("prolog.pl", inplace=True) as file:
+                        for line in file:
+                            if "blood_pressure(" in line and not changed:
+                                new_line = line.replace(line, f"blood_pressure({bp+1}).")
+                                print(new_line, end='\n')
+                                changed = True
+                            else:
+                                print(line, end='')
+
 
             #age check
             if widgets.form_age.value() > 65:
@@ -389,6 +514,36 @@ class MainWindow(QMainWindow):
 
             if len(list_of_sym) > 2:
                 risk += 1
+
+            if not widgets.widget_4.isHidden():
+                if widgets.mild_symptoms.isChecked():
+                    m = list(prolog.query("mild(X)"))
+                    mld = m[0]['X']
+                    prolog.retractall("mild(_)")
+                    prolog.asserta(f"mild({mld+1})")
+                    changed = False
+                    with fileinput.input("prolog.pl", inplace=True) as file:
+                        for line in file:
+                            if "mild(" in line and not changed:
+                                new_line = line.replace(line, f"mild({mld+1}).")
+                                print(new_line, end='\n')
+                                changed = True
+                            else:
+                                print(line, end='')
+                elif widgets.severe_symptoms.isChecked():
+                    s = list(prolog.query("severe(X)"))
+                    svr = s[0]['X']
+                    prolog.retractall("severe(_)")
+                    prolog.asserta(f"severe({svr+1})")
+                    changed = False
+                    with fileinput.input("prolog.pl", inplace=True) as file:
+                        for line in file:
+                            if "severe(" in line and not changed:
+                                new_line = line.replace(line, f"severe({svr+1}).")
+                                print(new_line, end='\n')
+                                changed = True
+                            else:
+                                print(line, end='')
                 
 
             c = list(prolog.query("covid_symptoms(X)"))
@@ -432,39 +587,115 @@ class MainWindow(QMainWindow):
             print(list_of_sym)
 
 
-            if risk >= 3:
-                flag = False
-                if(all(a in list_of_sym for a in omicron)):
-                    diagnosis = "This patient may have COVID-19. Variant: Omicron"
-                    prolog.retractall("tot_omicron(_)")
-                    prolog.asserta(f"tot_omicron({tot_omicron+1})")
-                    if not list_of_con:
-                        prolog.retractall("omicron_underlying(_)")
-                        prolog.asserta(f"omicron_underlying({omicron_underlying+1})")
+            flag = False
+            if(all(a in list_of_sym for a in omicron)):
+                positive += 1
+                diagnosis = "This patient may have COVID-19. Variant: Omicron"
+                prolog.retractall("tot_omicron(_)")
+                prolog.asserta(f"tot_omicron({tot_omicron+1})")
+                changed = False
+                with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "tot_delta(" in line and not changed:
+                            new_line = line.replace(line, f"tot_omicron({tot_omicron+1}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
+                if not list_of_con:
+                    prolog.retractall("omicron_underlying(_)")
+                    prolog.asserta(f"omicron_underlying({omicron_underlying+1})")
+                    changed = False
+                    with fileinput.input("prolog.pl", inplace=True) as file:
+                        for line in file:
+                            if "tot_delta(" in line and not changed:
+                                new_line = line.replace(line, f"omicron_underlying({omicron_underlying+1}).")
+                                print(new_line, end='\n')
+                                changed = True
+                            else:
+                                print(line, end='')
                     flag = True
 
-                if(all(b in list_of_sym for b in delta)):
-                    if not flag:
-                        diagnosis = "This patient may have COVID-19. Variant: Delta"
-                        prolog.retractall("tot_delta(_)")
-                        prolog.asserta(f"tot_delta({tot_delta+1})")
-                        flag = True
+            if(all(b in list_of_sym for b in delta)):
+                if not flag:
+                    positive += 1
+                    diagnosis = "This patient may have COVID-19. Variant: Delta"
+                    prolog.retractall("tot_delta(_)")
+                    prolog.asserta(f"tot_delta({tot_delta+1})")
+                    changed = False
+                    with fileinput.input("prolog.pl", inplace=True) as file:
+                        for line in file:
+                            if "tot_delta(" in line and not changed:
+                                new_line = line.replace(line, f"tot_delta({tot_delta+1}).")
+                                print(new_line, end='\n')
+                                changed = True
+                            else:
+                                print(line, end='')
+                    flag = True
 
-                if(all(c in list_of_sym for c in covid)):
-                    if not flag:
-                        diagnosis = "This patient may have COVID-19"
-                        prolog.retractall("tot_covid(_)")
-                        prolog.asserta(f"tot_covid({tot_covid+1})")
+            if(all(c in list_of_sym for c in covid) or risk >= 3):
+                if not flag:
+                    positive += 1
+                    diagnosis = "This patient may have COVID-19"
+                    prolog.retractall("tot_covid(_)")
+                    prolog.asserta(f"tot_covid({tot_covid+1})")
+                    changed = False
+                    with fileinput.input("prolog.pl", inplace=True) as file:
+                        for line in file:
+                            if "tot_covid(" in line:
+                                new_line = line.replace(line, f"tot_covid({tot_covid+1}).")
+                                print(new_line, end='\n')
+                                changed = True
+                            else:
+                                print(line, end='')
+                    flag = True
+
+            if widgets.male_radio.isChecked() and flag:
+                m = list(prolog.query("male_positives(X)"))
+                mle = m[0]['X']
+                prolog.retractall("male_positives(_)")
+                prolog.asserta(f"male_positives({mle+1})")
+                changed = False
+                with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "male_positives(" in line and not changed:
+                            new_line = line.replace(line, f"male_positives({mle+1}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
+            elif widgets.female_radio.isChecked() and flag:
+                f = list(prolog.query("female_positives(X)"))
+                fmle = f[0]['X']
+                prolog.retractall("female_positives(_)")
+                prolog.asserta(f"female_positives({fmle+1})")
+                changed = False
+                with fileinput.input("prolog.pl", inplace=True) as file:
+                    for line in file:
+                        if "female_positives(" in line and not changed:
+                            new_line = line.replace(line, f"female_positives({fmle+1}).")
+                            print(new_line, end='\n')
+                            changed = True
+                        else:
+                            print(line, end='')
 
 
-                positive += 1
-                diagnosed += 1
-            else:
-                diagnosed +=1
+                
+            diagnosed += 1
 
             prolog.retractall("cases(_,_)")
             prolog.assertz(f"cases({diagnosed},{positive})")
-
+            changed = False
+            with fileinput.input("prolog.pl", inplace=True) as file:
+                for line in file:
+                    if "cases(" in line and not changed:
+                        new_line = line.replace(line, f"cases({diagnosed},{positive}).")
+                        print(new_line, end='\n')
+                        changed = True
+                    else:
+                        print(line, end='')
+                    
+                    
             print(list(prolog.query("cases(X,Y)")))
 
             widgets.stackedWidget.setCurrentWidget(widgets.page)

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainNmkDQl.ui'
+## Form generated from reading UI file 'mainsiyVGZ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.2.4
 ##
@@ -2163,7 +2163,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2176,8 +2176,8 @@ class Ui_MainWindow(object):
         self.label_2.setText("")
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
-        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
-        self.btn_new.setText(QCoreApplication.translate("MainWindow", u"New", None))
+        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Add Diagnosis", None))
+        self.btn_new.setText(QCoreApplication.translate("MainWindow", u"Add Facts", None))
         self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"Covidex", None))

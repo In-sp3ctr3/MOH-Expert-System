@@ -1468,7 +1468,7 @@ background-color: rgb(0, 179, 204);</string>
                       <string notr="true">background: transparent;</string>
                      </property>
                      <property name="currentIndex">
-                      <number>1</number>
+                      <number>0</number>
                      </property>
                      <widget class="QWidget" name="home">
                       <property name="minimumSize">
