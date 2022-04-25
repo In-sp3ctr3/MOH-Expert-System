@@ -49,6 +49,7 @@ class MainWindow(QMainWindow):
         widgets.error_message_2.hide()
         widgets.success_message.hide()
         widgets.widget_4.hide()
+        widgets.popout_box.hide()
 
         # USE CUSTOM TITLE BAR | USE AS "False" FOR MAC OR LINUX
         Settings.ENABLE_CUSTOM_TITLE_BAR = True
@@ -72,7 +73,6 @@ class MainWindow(QMainWindow):
         widgets.btn_home.clicked.connect(self.buttonClick)
         widgets.btn_widgets.clicked.connect(self.buttonClick)
         widgets.btn_new.clicked.connect(self.buttonClick)
-        widgets.btn_save.clicked.connect(self.buttonClick)
         widgets.symptom_dropdown.activated.connect(self.buttonClick)
         widgets.diagnosis_submit.clicked.connect(self.buttonClick)
         widgets.clear_button.clicked.connect(self.buttonClick)
@@ -83,6 +83,7 @@ class MainWindow(QMainWindow):
         widgets.add_button_delta.clicked.connect(self.buttonClick)
         widgets.add_button_omicron.clicked.connect(self.buttonClick)
         widgets.add_button_conditions.clicked.connect(self.buttonClick)
+        widgets.dialog_button.clicked.connect(self.buttonClick)
 
         
         self.progressBarValue()
@@ -99,6 +100,11 @@ class MainWindow(QMainWindow):
 
         # SET HOME PAGE AND SELECT MENU
         widgets.stackedWidget.setCurrentWidget(widgets.home)
+        p = list(prolog.query("cases(X,Y)"))
+        check_surge = p[0]['Y']/p[0]['X']
+        if check_surge > 0.40:
+            widgets.popout_box.show()
+
         widgets.btn_home.setStyleSheet(UIFunctions.selectMenu(widgets.btn_home.styleSheet()))
 
         #Progress Bar for Pie Charts
@@ -224,6 +230,11 @@ class MainWindow(QMainWindow):
             btn.setStyleSheet(UIFunctions.selectMenu(btn.styleSheet()))
             self.progressBarValue()
             self.setHomePageStats()
+            b = list(prolog.query("cases(X,Y)"))
+            check_surge = b[0]['Y']/b[0]['X']
+            if check_surge > 0.40:
+                widgets.popout_box.show()
+            
 
         # SHOW DIAGNOSIS PAGE
         if btnName == "btn_widgets":
@@ -247,6 +258,9 @@ class MainWindow(QMainWindow):
         if btnName == "clear_conditions_button":
             widgets.conditions_display.setText('')
             list_of_con.clear()
+
+        if btnName == "dialog_button":
+            widgets.popout_box.hide()
             
 
         if btnName == "no_Bp":
@@ -717,12 +731,6 @@ class MainWindow(QMainWindow):
     def mousePressEvent(self, event):
         # SET DRAG POS WINDOW
         self.dragPos = event.globalPos()
-
-        # PRINT MOUSE EVENTS
-        if event.buttons() == Qt.LeftButton:
-            print('Mouse click: LEFT CLICK')
-        if event.buttons() == Qt.RightButton:
-            print('Mouse click: RIGHT CLICK')
 
 # SPLASH SCREEN
 class SplashScreen(QMainWindow):

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainsiyVGZ.ui'
+## Form generated from reading UI file 'mainzEaLFI.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.2.4
 ##
@@ -20,8 +20,9 @@ from PySide6.QtWidgets import (QAbstractSpinBox, QApplication, QCheckBox, QCombo
     QLineEdit, QMainWindow, QProgressBar, QPushButton,
     QRadioButton, QSizePolicy, QSpinBox, QStackedWidget,
     QVBoxLayout, QWidget)
-from splash_resource import *
-from resources_rc import *
+import resources_rc
+import resources_rc
+import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -724,18 +725,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.btn_new)
 
-        self.btn_save = QPushButton(self.topMenu)
-        self.btn_save.setObjectName(u"btn_save")
-        sizePolicy.setHeightForWidth(self.btn_save.sizePolicy().hasHeightForWidth())
-        self.btn_save.setSizePolicy(sizePolicy)
-        self.btn_save.setMinimumSize(QSize(0, 45))
-        self.btn_save.setFont(font)
-        self.btn_save.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_save.setLayoutDirection(Qt.LeftToRight)
-        self.btn_save.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-speedometer.png)")
-
-        self.verticalLayout_8.addWidget(self.btn_save)
-
         self.btn_exit = QPushButton(self.topMenu)
         self.btn_exit.setObjectName(u"btn_exit")
         sizePolicy.setHeightForWidth(self.btn_exit.sizePolicy().hasHeightForWidth())
@@ -1325,6 +1314,34 @@ class Ui_MainWindow(object):
         self.widget_3.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(38, 162, 105, 255), stop:1 rgba(0, 177, 255, 255));\n"
 "border-radius: 2px;")
+        self.popout_box = QWidget(self.home)
+        self.popout_box.setObjectName(u"popout_box")
+        self.popout_box.setGeometry(QRect(370, 270, 381, 191))
+        self.popout_box.setStyleSheet(u"#popout_box{\n"
+"background-color: rgb(246, 245, 244);\n"
+"border-radius: 10px;\n"
+"}")
+        self.dialog_button = QPushButton(self.popout_box)
+        self.dialog_button.setObjectName(u"dialog_button")
+        self.dialog_button.setGeometry(QRect(150, 150, 87, 26))
+        self.dialog_button.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"border: none;\n"
+"background-color: rgb(224, 27, 36);")
+        self.label_74 = QLabel(self.popout_box)
+        self.label_74.setObjectName(u"label_74")
+        self.label_74.setGeometry(QRect(160, 20, 66, 18))
+        self.label_74.setStyleSheet(u"font: 800 11pt \"Cantarell\";\n"
+"color:rgb(255, 34, 34);")
+        self.label_75 = QLabel(self.popout_box)
+        self.label_75.setObjectName(u"label_75")
+        self.label_75.setGeometry(QRect(120, 60, 261, 18))
+        self.label_76 = QLabel(self.popout_box)
+        self.label_76.setObjectName(u"label_76")
+        self.label_76.setGeometry(QRect(20, 100, 341, 41))
+        self.label_76.setStyleSheet(u"background-color: rgb(222, 221, 218);\n"
+"color: rgb(40, 76, 255);\n"
+"font: 700 11pt \"Cantarell\";")
+        self.label_76.setWordWrap(True)
         self.stackedWidget.addWidget(self.home)
         self.widgets = QWidget()
         self.widgets.setObjectName(u"widgets")
@@ -2163,7 +2180,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2176,9 +2193,8 @@ class Ui_MainWindow(object):
         self.label_2.setText("")
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
-        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Add Diagnosis", None))
+        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Diagnose", None))
         self.btn_new.setText(QCoreApplication.translate("MainWindow", u"Add Facts", None))
-        self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"Covidex", None))
 #if QT_CONFIG(tooltip)
@@ -2246,6 +2262,10 @@ class Ui_MainWindow(object):
         self.label_43.setText(QCoreApplication.translate("MainWindow", u"Overview", None))
         self.label_44.setText(QCoreApplication.translate("MainWindow", u"Stats", None))
         self.label_45.setText(QCoreApplication.translate("MainWindow", u"Cases", None))
+        self.dialog_button.setText(QCoreApplication.translate("MainWindow", u"Okay", None))
+        self.label_74.setText(QCoreApplication.translate("MainWindow", u"ALERT!", None))
+        self.label_75.setText(QCoreApplication.translate("MainWindow", u"There is a surge in cases", None))
+        self.label_76.setText(QCoreApplication.translate("MainWindow", u"Recommendation: Issue an all island Quarantine.", None))
         self.label.setText("")
         self.label_3.setText("")
         self.label_4.setText("")
