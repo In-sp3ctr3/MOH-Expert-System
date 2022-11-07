@@ -1,0 +1,11 @@
+<RCC>
+  <qresource>
+    <file>images/images/Logo.png</file>
+    <file>images/images/Logo-Full.png</file>
+    <file>images/images/mohw.png</file>
+    <file>images/images/PyDracula.png</file>
+    <file>images/images/PyDracula_horizontal.png</file>
+    <file>images/images/PyDracula_vertical.png</file>
+    <file>images/images/stopcorona.png</file>
+  </qresource>
+</RCC>
